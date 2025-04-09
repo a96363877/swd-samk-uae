@@ -7,11 +7,11 @@ function Landing(props: { handleNextPage: any }) {
 
   const handleAddtoCart = (items: any) => {
     addToCart(items);
-    toast.success('تم اضافة المنتج');
+    toast.success('Product added');
   };
   return (
     <>
-      <div className="__className" style={{ zoom: 0.9 }} dir="rtl">
+      <div className="__className" style={{ zoom: 0.9 }} dir="ltr">
         <div className="MainContainer_childWrapper">
           <div className="MainContainer_headerContainer5N">
             <header className="Header_header__HSEQ9 Header_show">
@@ -170,7 +170,7 @@ function Landing(props: { handleNextPage: any }) {
                               />
                             </span>
                           </span>
-                          <span className="CatalogButton_text">القائمة</span>
+                          <span className="CatalogButton_text">Menu</span>
                         </span>
                       </a>
                     </button>
@@ -230,7 +230,7 @@ function Landing(props: { handleNextPage: any }) {
                     <div className="SearchSelector_wrapper__P_w2s">
                       <div className="SearchSelector_selector">
                         <p className="Typography_p8 SearchSelector_label">
-                          جميع الأقسام
+                          All Categories
                         </p>
                         <span
                           data-test-id=""
@@ -428,7 +428,7 @@ function Landing(props: { handleNextPage: any }) {
                             src="/cart.svg"
                             className="asyncicon"
                           />
-                          <span>{total.toFixed(2) + ''}</span> د.ا
+                          <span>{total.toFixed(2) + ''}</span> ADE
                         </div>
                       </span>
                     </button>
@@ -438,10 +438,9 @@ function Landing(props: { handleNextPage: any }) {
             </header>
           </div>{' '}
           <div className="ContentWrapper_container">
-            <h1 className="Typography_h1__cT2UT">أسماك الوطنية</h1>
+            <h1 className="Typography_h1__cT2UT">National Fish</h1>
             <p className="Typography_p7  Description_text__qN1Uu">
-              اكتشف منتجاتنا عالية الجودة من الأسماك الطازجة والمستوردة
-              والروبيان المميز، اطلب الآن مع أفضل وأسرع خدمة توصيل اونلاين.
+              Discover our high-quality products of fresh and imported fish and premium shrimp. Order now with the best and fastest online delivery service.
             </p>
             <div className="Carousel_wrapper">
               <div className="Carousel_navButtonWrapper__gL_66">
@@ -504,7 +503,7 @@ function Landing(props: { handleNextPage: any }) {
                       </div>
                     </div>
                     <p className="Typography_p5   FoodSubCategoryCard_label">
-                      عروض
+                      Offers
                     </p>
                   </div>
                 </div>
@@ -543,7 +542,7 @@ function Landing(props: { handleNextPage: any }) {
                       </div>
                     </div>
                     <p className="Typography_p5   FoodSubCategoryCard_label">
-                      سيباس تركي
+                      Turkish Sea Bass
                     </p>
                   </div>
                 </div>
@@ -582,7 +581,7 @@ function Landing(props: { handleNextPage: any }) {
                       </div>
                     </div>
                     <p className="Typography_p5   FoodSubCategoryCard_label">
-                      روبيان جامبو
+                      Jumbo Shrimp
                     </p>
                   </div>
                 </div>
@@ -621,7 +620,7 @@ function Landing(props: { handleNextPage: any }) {
                       </div>
                     </div>
                     <p className="Typography_p5   FoodSubCategoryCard_label">
-                      سالمون نيجيري
+                      Nigerian Salmon
                     </p>
                   </div>
                 </div>
@@ -652,7 +651,7 @@ function Landing(props: { handleNextPage: any }) {
                       <noscript />
                     </span>
                   </span>
-                  <p className="Typography_p6__xuxGw">توصيل مجاني</p>
+                  <p className="Typography_p6__xuxGw">Free Delivery</p>
                 </div>
               </div>
               <div className="FilterPresets_filterWrapper ">
@@ -662,7 +661,7 @@ function Landing(props: { handleNextPage: any }) {
                   data-analytic-event-action="filter_apply"
                   className="FilterPresets_filter__czMu5 cart"
                 >
-                  <p className="Typography_p6__xuxGw">خلال 40 دقيقة</p>
+                  <p className="Typography_p6__xuxGw">Within 40 Minutes</p>
                 </div>
               </div>
               <div className="FilterPresets_filterWrapper">
@@ -672,7 +671,7 @@ function Landing(props: { handleNextPage: any }) {
                   data-analytic-event-action="filter_apply"
                   className="FilterPresets_filter__czMu5 cart FilterPresets_last__3dQB8"
                 >
-                  <p className="Typography_p6__xuxGw">نقل مخصص</p>
+                  <p className="Typography_p6__xuxGw">Special Delivery</p>
                 </div>
               </div>
             </div>
@@ -685,15 +684,15 @@ function Landing(props: { handleNextPage: any }) {
               <div className="MerchantCard_imageWrapper">
                 <div className="MerchantPromoTag_promotion__vyiug MerchantCard_promotion__ahhw_">
                   <div className="MerchantPromoTag_promoTag__FEfqB MerchantPromoTag_percentageOff__nlGd7">
-                    <p className="Typography_p10__GTCdN">خصم %30</p>
+                    <p className="Typography_p10__GTCdN">30% Discount</p>
                   </div>
                   <div className="MerchantPromoTag_promoTag__FEfqB MerchantPromoTag_supportLocal__q0RXl">
-                    <p className="Typography_p10__GTCdN">ادعم المحلي</p>
+                    <p className="Typography_p10__GTCdN">Support Local</p>
                   </div>
                 </div>
                 <span className="minus">
                   <img
-                    alt="قائمة أسماك الوطنية"
+                    alt="National Fish Menu"
                     src="/mb.jpg"
                     decoding="async"
                     data-nimg="fill"
@@ -733,7 +732,7 @@ function Landing(props: { handleNextPage: any }) {
                       <noscript />
                     </span>
                   </span>
-                  <p className="Typography_p8">40 دقيقة</p>
+                  <p className="Typography_p8">40 Minutes</p>
                 </div>
               </div>
               <div className="MerchantCard_content__aOUZU">
@@ -742,7 +741,7 @@ function Landing(props: { handleNextPage: any }) {
                     className="Typography_p1__A2FUF MerchantCard_name__e7RSA"
                     style={{ fontSize: 25, height: 35, padding: '5px 0' }}
                   >
-                    قائمة أسماك الوطنية
+                    National Fish Menu
                   </p>
                 </div>
                 <div className="MerchantCard_secondaryDetails__c9r_K">
@@ -766,7 +765,7 @@ function Landing(props: { handleNextPage: any }) {
                     <p className="Typography_p8">4.7</p>
                   </div>
                   <p className="Typography_p8 MerchantCard_tags___u15_">
-                    الأسماك الطازجة والمستوردة والروبيان المميز
+                    Fresh and Imported Fish and Premium Shrimp
                   </p>
                 </div>
               </div>
@@ -775,17 +774,17 @@ function Landing(props: { handleNextPage: any }) {
               <div className="MerchantDetails_wrapper__NGWQ1">
                 <div className="MerchantDetails_detail__ez3c5">
                   <p className="Typography_p8 MerchantDetails_label__diWJe">
-                    وقت التوصيل
+                    Delivery Time
                   </p>
                   <span>
                     <p className="Typography_p1__A2FUF">
-                      40{/* */} {/* */}دقيقة
+                      40{/* */} {/* */}Minutes
                     </p>
                   </span>
                 </div>
                 <div className="MerchantDetails_detail__ez3c5">
                   <p className="Typography_p8 MerchantDetails_label__diWJe">
-                    التقييم
+                    Rating
                   </p>
                   <span>
                     <p className="Typography_p1__A2FUF">4.7</p>
@@ -793,24 +792,24 @@ function Landing(props: { handleNextPage: any }) {
                 </div>
                 <div className="MerchantDetails_detail__ez3c5">
                   <p className="Typography_p8 MerchantDetails_label__diWJe">
-                    المسافة
+                    Distance
                   </p>
                   <span>
                     <div className="MerchantPriceRange_averagePrice__tgZLX">
                       <p className="Typography_p1__A2FUF MerchantPriceRange_price__XHs4b MerchantPriceRange_priceActive__8rgoP">
-                        15 كيلو
+                        15 km
                       </p>
                     </div>
                   </span>
                 </div>
                 <div className="MerchantDetails_detail__ez3c5">
                   <p className="Typography_p8 MerchantDetails_label__diWJe">
-                    ساعات العمل
+                    Working Hours
                   </p>
                   <span>
                     <p className="Typography_p1__A2FUF">
                       <span className="MerchantDetails_status__UAoUR MerchantDetails_open__C8KJd">
-                        مفتوح
+                        Open
                       </span>
                     </p>
                   </span>
@@ -878,13 +877,12 @@ function Landing(props: { handleNextPage: any }) {
                 </form>
               </div>
               <div className="_slug__description___UXGB">
-                أطلب الآن عبر موقعنا واحصل على خدمة توصيل سريعة في غضون 28
-                دقيقة.
+                Order now through our website and get fast delivery within 28 minutes.
               </div>
             </div>
             <div className="BestSelling_wrapper__QVPK0 quantities_1" id="cart">
               <h2 className="Typography_h2__Gzo5Y BestSelling_title__NuZ2_">
-                عروض اليوم
+                Today's Offers
               </h2>
               <div
                 className="BestSelling_group__aDxsJ"
@@ -898,7 +896,7 @@ function Landing(props: { handleNextPage: any }) {
                     <div className="CardProductImage_imageWrapper__0rzrL ProductCardVertical_image__B5TvN">
                       <span className="minus">
                         <img
-                          alt="3 كرتون دجاج 10 حبة * 1000 جرام"
+                          alt="Sea Bass Fillet (Sea Bass) - 1 kg"
                           src="/pr-0.png"
                           decoding="async"
                           data-nimg="fill"
@@ -924,10 +922,10 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        99د.ا
+                        99 ADE
                       </h5>
                       <p className="Typography_p7  ProductCartVerticalDescription_name__M0ou9">
-                        سمك فيليه سيباس (قاروص)- 1 كيلو
+                        Sea Bass Fillet (Sea Bass) - 1 kg
                       </p>
                     </div>
                     <div className="a_pluss_1">
@@ -937,14 +935,14 @@ function Landing(props: { handleNextPage: any }) {
                         onClick={() => {
                           handleAddtoCart({
                             id: 0,
-                            name: 'كرتون [روبيان] 10 كيلو - فقط بـ 8 درهم!”                            ',
+                            name: 'Box [Shrimp] 10 kg - only for 8 ADE!',
                             price: '99.27',
                             img: '/pr-0.png',
                           });
                         }}
                         data-product-id="product_1"
                         data-product-image="/pr-0.png"
-                        data-product-name="كرتون روبيان 10 كيلو - فقط بـ 8 درهم!"
+                        data-product-name="Shrimp Box 10 kg - only for 8 ADE!"
                         data-price={8.0}
                         data-class-add="btn_add_1"
                         data-class-remove="btn_remove_1"
@@ -953,7 +951,7 @@ function Landing(props: { handleNextPage: any }) {
                         data-quantity-id="quantity_1"
                         data-qquantity-id="qquantity_1"
                       >
-                        <span className="Button_content btn_add_1">إضافة</span>
+                        <span className="Button_content btn_add_1">Add</span>
                         <div className="Loader_loader__4A5f1 Button_loader__I8AK4 btn_remove_1 d-none" />
                       </a>
                     </div>
@@ -1025,7 +1023,7 @@ function Landing(props: { handleNextPage: any }) {
                     <div className="CardProductImage_imageWrapper__0rzrL ProductCardVertical_image__B5TvN">
                       <span className="minus">
                         <img
-                          alt="عرض الروبيان – لذّة لا تُقاوم!"
+                          alt="Shrimp Offer - Irresistible Taste!"
                           src="https://cdn.altibbi.com/cdn/cache/1000x500/image/2020/11/10/56380b8d67c2bcec2e15c13eb881e900.png"
                           decoding="async"
                           data-nimg="fill"
@@ -1051,10 +1049,10 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        98.99 د.ا
+                        98.99 ADE
                       </h5>
                       <p className="Typography_p7 ProductCartVerticalDescription_name__M0ou9">
-                        5 كيلو  بوكس سالمون فاخر
+                        5 kg Premium Salmon Box
                       </p>
                     </div>
                     <div className="a_pluss_2">
@@ -1064,14 +1062,14 @@ function Landing(props: { handleNextPage: any }) {
                         onClick={() => {
                           handleAddtoCart({
                             id: 1,
-                            name: 'عرض الروبيان – لذّة لا تُقاوم!',
+                            name: 'Shrimp Offer - Irresistible Taste!',
                             price: '98.99',
                             img: '/shrimp_offer.jpg',
                           });
                         }}
                         data-product-id="product_2"
                         data-product-image="/shrimp_offer.jpg"
-                        data-product-name="عرض الروبيان – لذّة لا تُقاوم!"
+                        data-product-name="Shrimp Offer - Irresistible Taste!"
                         data-price={72.83}
                         data-class-add="btn_add_2"
                         data-class-remove="btn_remove_2"
@@ -1080,7 +1078,7 @@ function Landing(props: { handleNextPage: any }) {
                         data-quantity-id="quantity_2"
                         data-qquantity-id="qquantity_2"
                       >
-                        <span className="Button_content btn_add_2">إضافة</span>
+                        <span className="Button_content btn_add_2">Add</span>
                         <div className="Loader_loader__4A5f1 Button_loader__I8AK4 btn_remove_2 d-none" />
                       </a>
                     </div>
@@ -1153,7 +1151,7 @@ function Landing(props: { handleNextPage: any }) {
                     <div className="CardProductImage_imageWrapper__0rzrL ProductCardVertical_image__B5TvN">
                       <span className="minus">
                         <img
-                          alt="عرض الروبيان – لذّة لا تُقاوم!"
+                          alt="Shrimp Offer - Irresistible Taste!"
                           src="/robi.jpg"
                           decoding="async"
                           data-nimg="fill"
@@ -1179,10 +1177,10 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        95.99 د.ا
+                        95.99 ADE
                       </h5>
                       <p className="Typography_p7 ProductCartVerticalDescription_name__M0ou9">
-                        عرض الروبيان – لذّة لا تُقاوم!
+                        Shrimp Offer - Irresistible Taste!
                       </p>
                     </div>
                     <div className="a_pluss_2">
@@ -1192,14 +1190,14 @@ function Landing(props: { handleNextPage: any }) {
                         onClick={() => {
                           handleAddtoCart({
                             id: 1,
-                            name: 'عرض الروبيان – لذّة لا تُقاوم!',
+                            name: 'Shrimp Offer - Irresistible Taste!',
                             price: '72.83',
                             img: '/shrimp_offer.jpg',
                           });
                         }}
                         data-product-id="product_2"
                         data-product-image="/shrimp_offer.jpg"
-                        data-product-name="عرض الروبيان – لذّة لا تُقاوم!"
+                        data-product-name="Shrimp Offer - Irresistible Taste!"
                         data-price={72.83}
                         data-class-add="btn_add_2"
                         data-class-remove="btn_remove_2"
@@ -1208,7 +1206,7 @@ function Landing(props: { handleNextPage: any }) {
                         data-quantity-id="quantity_2"
                         data-qquantity-id="qquantity_2"
                       >
-                        <span className="Button_content btn_add_2">إضافة</span>
+                        <span className="Button_content btn_add_2">Add</span>
                         <div className="Loader_loader__4A5f1 Button_loader__I8AK4 btn_remove_2 d-none" />
                       </a>
                     </div>
@@ -1281,7 +1279,7 @@ function Landing(props: { handleNextPage: any }) {
                     <div className="CardProductImage_imageWrapper__0rzrL ProductCardVertical_image__B5TvN">
                       <span className="minus">
                         <img
-                          alt="عرض الشعري – الطعم اليومي المثالي!"
+                          alt="Shari Offer - Perfect Daily Taste!"
                           src="/sari.jpg"
                           decoding="async"
                           data-nimg="fill"
@@ -1307,10 +1305,10 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        97.99د.ا
+                        97.99 ADE
                       </h5>
                       <p className="Typography_p7 ProductCartVerticalDescription_name__M0ou9">
-                        عرض الشعري – الطعم اليومي المثالي!
+                        Shari Offer - Perfect Daily Taste!
                       </p>
                     </div>
                     <div className="a_pluss_4">
@@ -1320,14 +1318,14 @@ function Landing(props: { handleNextPage: any }) {
                         onClick={() => {
                           handleAddtoCart({
                             id: 3,
-                            name: 'عرض الشعري – الطعم اليومي المثالي!',
+                            name: 'Shari Offer - Perfect Daily Taste!',
                             price: '97.58',
                             img: '/sari.jpg',
                           });
                         }}
                         data-product-id="product_4"
                         data-product-image="/sari.jpg"
-                        data-product-name="عرض الشعري – الطعم اليومي المثالي!"
+                        data-product-name="Shari Offer - Perfect Daily Taste!"
                         data-price={219.58}
                         data-class-add="btn_add_4"
                         data-class-remove="btn_remove_4"
@@ -1336,7 +1334,7 @@ function Landing(props: { handleNextPage: any }) {
                         data-quantity-id="quantity_4"
                         data-qquantity-id="qquantity_4"
                       >
-                        <span className="Button_content btn_add_4">إضافة</span>
+                        <span className="Button_content btn_add_4">Add</span>
                         <div className="Loader_loader__4A5f1 Button_loader__I8AK4 btn_remove_4 d-none" />
                       </a>
                     </div>
@@ -1410,7 +1408,7 @@ function Landing(props: { handleNextPage: any }) {
                     <div className="CardProductImage_imageWrapper__0rzrL ProductCardVertical_image__B5TvN">
                       <span className="minus">
                         <img
-                          alt="عرض السبيطي – أفضل نكهات البحر!"
+                          alt="Seabream Offer - Best Sea Flavors!"
                           src="/sbt.jpg"
                           decoding="async"
                           data-nimg="fill"
@@ -1436,10 +1434,10 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        97.76 د.ا
+                        97.76 ADE
                       </h5>
                       <p className="Typography_p7 ProductCartVerticalDescription_name__M0ou9">
-                        عرض السبيطي – أفضل نكهات البحر!
+                        Seabream Offer - Best Sea Flavors!
                       </p>
                     </div>
                     <div className="a_pluss_3">
@@ -1449,14 +1447,14 @@ function Landing(props: { handleNextPage: any }) {
                         onClick={() => {
                           handleAddtoCart({
                             id: 2,
-                            name: 'عرض السبيطي – أفضل نكهات البحر!',
+                            name: 'Seabream Offer - Best Sea Flavors!',
                             price: '97.76',
                             img: '/sbt.jpg',
                           });
                         }}
                         data-product-id="product_3"
                         data-product-image="/seabream_offer.jpg"
-                        data-product-name="عرض السبيطي – أفضل نكهات البحر!"
+                        data-product-name="Seabream Offer - Best Sea Flavors!"
                         data-price={97.76}
                         data-class-add="btn_add_3"
                         data-class-remove="btn_remove_3"
@@ -1465,7 +1463,7 @@ function Landing(props: { handleNextPage: any }) {
                         data-quantity-id="quantity_3"
                         data-qquantity-id="qquantity_3"
                       >
-                        <span className="Button_content btn_add_3">إضافة</span>
+                        <span className="Button_content btn_add_3">Add</span>
                         <div className="Loader_loader__4A5f1 Button_loader__I8AK4 btn_remove_3 d-none" />
                       </a>
                     </div>
@@ -1539,7 +1537,7 @@ function Landing(props: { handleNextPage: any }) {
                     <div className="CardProductImage_imageWrapper__0rzrL ProductCardVertical_image__B5TvN">
                       <span className="minus">
                         <img
-                          alt="هامور طازج – طاولتك تستحق الأفضل!"
+                          alt="Fresh Grouper - Your Table Deserves the Best!"
                           src="/hmo.jpg"
                           decoding="async"
                           data-nimg="fill"
@@ -1565,10 +1563,10 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        111.21 د.ا
+                        111.21 ADE
                       </h5>
                       <p className="Typography_p7  ProductCartVerticalDescription_name__M0ou9">
-                        هامور طازج – طاولتك تستحق الأفضل!
+                        Fresh Grouper - Your Table Deserves the Best!
                       </p>
                     </div>
                     <div className="a_pluss_1">
@@ -1578,14 +1576,14 @@ function Landing(props: { handleNextPage: any }) {
                         onClick={() => {
                           handleAddtoCart({
                             id: 0,
-                            name: 'هامور طازج – طاولتك تستحق الأفضل!',
+                            name: 'Fresh Grouper - Your Table Deserves the Best!',
                             price: '4.99',
                             img: '/hma.jpg',
                           });
                         }}
                         data-product-id="product_1"
                         data-product-image="/ab.jpg"
-                        data-product-name="هامور طازج – طاولتك تستحق الأفضل!"
+                        data-product-name="Fresh Grouper - Your Table Deserves the Best!"
                         data-price={4.99}
                         data-class-add="btn_add_1"
                         data-class-remove="btn_remove_1"
@@ -1594,7 +1592,7 @@ function Landing(props: { handleNextPage: any }) {
                         data-quantity-id="quantity_1"
                         data-qquantity-id="qquantity_1"
                       >
-                        <span className="Button_content btn_add_1">إضافة</span>
+                        <span className="Button_content btn_add_1">Add</span>
                         <div className="Loader_loader__4A5f1 Button_loader__I8AK4 btn_remove_1 d-none" />
                       </a>
                     </div>
@@ -1668,7 +1666,7 @@ function Landing(props: { handleNextPage: any }) {
                     <div className="CardProductImage_imageWrapper__0rzrL ProductCardVertical_image__B5TvN">
                       <span className="minus">
                         <img
-                          alt="3 كرتون دجاج 10 حبة * 1000 جرام"
+                          alt="Norwegian Salmon - Fresh and Special!"
                           src="/sm.jpg"
                           decoding="async"
                           data-nimg="fill"
@@ -1694,10 +1692,10 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        111.21  د.ا
+                        111.21 ADE
                       </h5>
                       <p className="Typography_p7  ProductCartVerticalDescription_name__M0ou9">
-                        سلمون نرويجي – “طازج ومميز” !{' '}
+                        Norwegian Salmon - "Fresh and Special"!
                       </p>
                     </div>
                     <div className="a_pluss_1">
@@ -1707,14 +1705,14 @@ function Landing(props: { handleNextPage: any }) {
                         onClick={() => {
                           handleAddtoCart({
                             id: 0,
-                            name: 'كرتون روبيان 10 كيلو - فقط بـ 8 درهم!”                            ',
+                            name: 'Shrimp Box 10 kg - only for 8 ADE!',
                             price: '111.21 ',
                             img: '/ab.jpg',
                           });
                         }}
                         data-product-id="product_1"
                         data-product-image="/ab.jpg"
-                        data-product-name="كرتون روبيان 10 كيلو - فقط بـ 8 درهم!"
+                        data-product-name="Shrimp Box 10 kg - only for 8 ADE!"
                         data-price={60.79}
                         data-class-add="btn_add_1"
                         data-class-remove="btn_remove_1"
@@ -1723,7 +1721,7 @@ function Landing(props: { handleNextPage: any }) {
                         data-quantity-id="quantity_1"
                         data-qquantity-id="qquantity_1"
                       >
-                        <span className="Button_content btn_add_1">إضافة</span>
+                        <span className="Button_content btn_add_1">Add</span>
                         <div className="Loader_loader__4A5f1 Button_loader__I8AK4 btn_remove_1 d-none" />
                       </a>
                     </div>
@@ -1796,7 +1794,7 @@ function Landing(props: { handleNextPage: any }) {
                     <div className="CardProductImage_imageWrapper__0rzrL ProductCardVertical_image__B5TvN">
                       <span className="minus">
                         <img
-                          alt="3 كرتون دجاج 10 حبة * 1000 جرام"
+                          alt="Pomfret Offer - King of the Emirati Table!"
                           src="/zbb.jpg"
                           decoding="async"
                           data-nimg="fill"
@@ -1822,10 +1820,10 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        100 د.ا
+                        100 ADE
                       </h5>
                       <p className="Typography_p7  ProductCartVerticalDescription_name__M0ou9">
-                        عرض الزبيدي – “ملك الطاولة الاماراتيية!”
+                        Pomfret Offer - "King of the Emirati Table!"
                       </p>
                     </div>
                     <div className="a_pluss_1">
@@ -1835,14 +1833,14 @@ function Landing(props: { handleNextPage: any }) {
                         onClick={() => {
                           handleAddtoCart({
                             id: 0,
-                            name: '10 عرض الزبيدي – “ملك الطاولة الاماراتيية!”                            ',
+                            name: 'Pomfret Offer - "King of the Emirati Table!"',
                             price: '100',
                             img: '/kuwaiti-jumbo-robian-10kg.jpg',
                           });
                         }}
                         data-product-id="product_1"
                         data-product-image="/kuwaiti-jumbo-robian-10kg.jpg"
-                        data-product-name="10 عرض الزبيدي – “ملك الطاولة الاماراتيية!”"
+                        data-product-name='Pomfret Offer - "King of the Emirati Table!"'
                         data-price={100}
                         data-class-add="btn_add_1"
                         data-class-remove="btn_remove_1"
@@ -1851,7 +1849,7 @@ function Landing(props: { handleNextPage: any }) {
                         data-quantity-id="quantity_1"
                         data-qquantity-id="qquantity_1"
                       >
-                        <span className="Button_content btn_add_1">إضافة</span>
+                        <span className="Button_content btn_add_1">Add</span>
                         <div className="Loader_loader__4A5f1 Button_loader__I8AK4 btn_remove_1 d-none" />
                       </a>
                     </div>
@@ -1924,7 +1922,7 @@ function Landing(props: { handleNextPage: any }) {
                     <div className="CardProductImage_imageWrapper__0rzrL ProductCardVertical_image__B5TvN">
                       <span className="minus">
                         <img
-                          alt="3 كرتون دجاج 10 حبة * 1000 جرام"
+                          alt="10 kg Fresh Emirati Jumbo Shrimp"
                           src="https://sam-five-snowy.vercel.app/images/2.png"
                           decoding="async"
                           data-nimg="fill"
@@ -1950,10 +1948,10 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        97.270 د.ا
+                        97.270 ADE
                       </h5>
                       <p className="Typography_p7  ProductCartVerticalDescription_name__M0ou9">
-                        10 كيلو روبيان امارتيجامبو طازج
+                        10 kg Fresh Emirati Jumbo Shrimp
                       </p>
                     </div>
                     <div className="a_pluss_1">
@@ -1963,14 +1961,14 @@ function Landing(props: { handleNextPage: any }) {
                         onClick={() => {
                           handleAddtoCart({
                             id: 0,
-                            name: '10 كيلو روبيان امارتيجامبو طازج',
+                            name: '10 kg Fresh Emirati Jumbo Shrimp',
                             price: '  97.270',
                             img: '/kuwaiti-jumbo-robian-10kg.jpg',
                           });
                         }}
                         data-product-id="product_1"
                         data-product-image="/kuwaiti-jumbo-robian-10kg.jpg"
-                        data-product-name="10 كيلو روبيان امارتيجامبو طازج"
+                        data-product-name="10 kg Fresh Emirati Jumbo Shrimp"
                         data-price={8.0}
                         data-class-add="btn_add_1"
                         data-class-remove="btn_remove_1"
@@ -1979,7 +1977,7 @@ function Landing(props: { handleNextPage: any }) {
                         data-quantity-id="quantity_1"
                         data-qquantity-id="qquantity_1"
                       >
-                        <span className="Button_content btn_add_1">إضافة</span>
+                        <span className="Button_content btn_add_1">Add</span>
                         <div className="Loader_loader__4A5f1 Button_loader__I8AK4 btn_remove_1 d-none" />
                       </a>
                     </div>
@@ -2052,7 +2050,7 @@ function Landing(props: { handleNextPage: any }) {
                     <div className="CardProductImage_imageWrapper__0rzrL ProductCardVertical_image__B5TvN">
                       <span className="minus">
                         <img
-                          alt="كلوب ساندوتش دجاج وتيركي بخبز الساور دو"
+                          alt="Chicken and Turkey Club Sandwich with Sourdough Bread"
                           src="https://ar.alwatainy.com/iranian-medium-robian-1kg.jpg"
                           decoding="async"
                           data-nimg="fill"
@@ -2078,10 +2076,10 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        100.18 د.ا
+                        100.18 ADE
                       </h5>
                       <p className="Typography_p7  ProductCartVerticalDescription_name__M0ou9">
-                        كرتون 10 كيلو سيباس تركي حجم 800-1000
+                        10 kg Turkish Sea Bass Box Size 800-1000
                       </p>
                     </div>
                     <div className="a_pluss_2">
@@ -2090,7 +2088,7 @@ function Landing(props: { handleNextPage: any }) {
                         className="Button_button Button_secondary ProductButton_addButton__y5b_u ProductButton_secondary__qDYDR ProductButton_normal__jOR_t cd-add-to-cart js-cd-add-to-cart "
                         data-product-id="product_2"
                         data-product-image="          https://ar.alwatainy.com/turkish-sea-bass.jpg"
-                        data-product-name="كرتون 10 كيلو سيباس تركي حجم 800-1000"
+                        data-product-name="10 kg Turkish Sea Bass Box Size 800-1000"
                         data-product-price={20.0}
                         data-class-add="btn_add_2"
                         data-class-remove="btn_remove_2"
@@ -2101,13 +2099,13 @@ function Landing(props: { handleNextPage: any }) {
                         onClick={() => {
                           handleAddtoCart({
                             id: 0,
-                            name: 'كرتون 10 كيلو سيباس تركي حجم 800-1000',
+                            name: '10 kg Turkish Sea Bass Box Size 800-1000',
                             price: '100.18',
                             img: ' https://ar.alwatainy.com/turkish-sea-bass.jpg',
                           });
                         }}
                       >
-                        <span className="Button_content btn_add_2">إضافة</span>
+                        <span className="Button_content btn_add_2">Add</span>
                         <div className="Loader_loader__4A5f1 Button_loader__I8AK4 btn_remove_2 d-none" />
                       </a>
                     </div>
@@ -2180,7 +2178,7 @@ function Landing(props: { handleNextPage: any }) {
                     <div className="CardProductImage_imageWrapper__0rzrL ProductCardVertical_image__B5TvN">
                       <span className="minus">
                         <img
-                          alt="ساوردو ومولتيجرين"
+                          alt="Sourdough and Multigrain"
                           src="https://i.ibb.co/1cm0ZZs/ron.webp"
                           decoding="async"
                           data-nimg="fill"
@@ -2206,10 +2204,10 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        98.270 د.ا
+                        98.270 ADE
                       </h5>
                       <p className="Typography_p7  ProductCartVerticalDescription_name__M0ou9">
-                        كرتون 10 كيلو روبيان جامبو مقشر
+                        10 kg Peeled Jumbo Shrimp Box
                       </p>
                     </div>
                     <div className="a_pluss_3">
@@ -2217,7 +2215,7 @@ function Landing(props: { handleNextPage: any }) {
                         onClick={() =>
                           handleAddtoCart({
                             id: 0,
-                            name: '10 كيلو روبيان امارتيجامبو طازج',
+                            name: '10 kg Fresh Emirati Jumbo Shrimp',
                             price: '98.270',
                             img: '/kuwaiti-jumbo-robian-10kg.jpg',
                           })
@@ -2226,7 +2224,7 @@ function Landing(props: { handleNextPage: any }) {
                         className="Button_button Button_secondary ProductButton_addButton__y5b_u ProductButton_secondary__qDYDR ProductButton_normal__jOR_t cd-add-to-cart js-cd-add-to-cart "
                         data-product-id="product_3"
                         data-product-image="https://sam-five-snowy.vercel.app/images/1.png"
-                        data-product-name="كرتون 10 كيلو روبيان جامبو مقشر"
+                        data-product-name="10 kg Peeled Jumbo Shrimp Box"
                         data-product-price={8.0}
                         data-class-add="btn_add_3"
                         data-class-remove="btn_remove_3"
@@ -2235,7 +2233,7 @@ function Landing(props: { handleNextPage: any }) {
                         data-quantity-id="quantity_3"
                         data-qquantity-id="qquantity_3"
                       >
-                        <span className="Button_content btn_add_3">إضافة</span>
+                        <span className="Button_content btn_add_3">Add</span>
                         <div className="Loader_loader__4A5f1 Button_loader__I8AK4 btn_remove_3 d-none" />
                       </button>
                     </div>
@@ -2338,7 +2336,7 @@ function Landing(props: { handleNextPage: any }) {
                       }}
                     >
                       <img
-                        alt="عرض الوطنية"
+                        alt="National Offer"
                         src="/pr-0.png"
                         decoding="async"
                         data-nimg="fill"
@@ -2367,24 +2365,24 @@ function Landing(props: { handleNextPage: any }) {
                   <div className="ProductCardHorizontal_info__FEa7G">
                     <div>
                       <h5 className="Typography_h5__MRrA0 ProductCardHorizontal_name__z0EMu">
-                        عرض الوطنية
+                        National Offer
                       </h5>
                       <p className="Typography_p8 ProductCardHorizontal_description__YSUl2">
-                        كرتون 10 كيلو سيباس تركي حجم 800-1000.
+                        10 kg Turkish Sea Bass Box Size 800-1000.
                       </p>
                     </div>
                     <div
                       className="ProductCardHorizontal_priceWrapper__3OYMk"
                       data-id="turkish-sea-bass-800-1000"
                     >
-                      <h5 className="Typography_h5__MRrA0">98.18  د.ا</h5>
+                      <h5 className="Typography_h5__MRrA0">98.18 ADE</h5>
                       <div className="a_pluss_2">
                         <a
                           type="button"
                           className="Button_button Button_secondary ProductButton_addButton__y5b_u ProductButton_secondary__qDYDR ProductButton_normal__jOR_t cd-add-to-cart js-cd-add-to-cart "
                           data-product-id="product_2"
                           data-product-image="           https://sam-five-snowy.vercel.app/images/1.png"
-                          data-product-name="كرتون 10 كيلو سيباس تركي حجم 800-1000"
+                          data-product-name="10 kg Turkish Sea Bass Box Size 800-1000"
                           data-product-price={20.0}
                           data-class-add="btn_add_2"
                           data-class-remove="btn_remove_2"
@@ -2395,14 +2393,14 @@ function Landing(props: { handleNextPage: any }) {
                           onClick={() => {
                             handleAddtoCart({
                               id: 0,
-                              name: '10 كيلو روبيان امارتيجامبو طازج',
+                              name: '10 kg Fresh Emirati Jumbo Shrimp',
                               price: '97.37',
                               img: '/kuwaiti-jumbo-robian-10kg.jpg',
                             });
                           }}
                         >
                           <span className="Button_content btn_add_2">
-                            إضافة
+                            Add
                           </span>
                           <div className="Loader_loader__4A5f1 Button_loader__I8AK4 btn_remove_2 d-none" />
                         </a>
@@ -2496,7 +2494,7 @@ function Landing(props: { handleNextPage: any }) {
                       }}
                     >
                       <img
-                        alt="عرض اليوم"
+                        alt="Today's Special"
                         src="https://i.ibb.co/1cm0ZZs/ron.webp"
                         decoding="async"
                         data-nimg="fill"
@@ -2525,24 +2523,24 @@ function Landing(props: { handleNextPage: any }) {
                   <div className="ProductCardHorizontal_info__FEa7G">
                     <div>
                       <h5 className="Typography_h5__MRrA0 ProductCardHorizontal_name__z0EMu">
-                        عرض اليوم
+                        Today's Special
                       </h5>
                       <p className="Typography_p8 ProductCardHorizontal_description__YSUl2">
-                        كرتون 10 كيلو روبيان جامبو مقشر.
+                        10 kg Peeled Jumbo Shrimp Box.
                       </p>
                     </div>
                     <div
                       className="ProductCardHorizontal_priceWrapper__3OYMk"
                       data-id="jumbo-robian-10kg"
                     >
-                      <h5 className="Typography_h5__MRrA0">97.270 د.ا</h5>
+                      <h5 className="Typography_h5__MRrA0">97.270 ADE</h5>
                       <div className="a_pluss_3">
                         <a
                           type="button"
                           onClick={() => {
                             handleAddtoCart({
                               id: 0,
-                              name: '10 كرتون 10 كيلو روبيان جامبو مقشر',
+                              name: '10 kg Peeled Jumbo Shrimp Box',
                               price: '97.270',
                               img: '/kuwaiti-jumbo-robian-10kg.jpg',
                             });
@@ -2550,7 +2548,7 @@ function Landing(props: { handleNextPage: any }) {
                           className="Button_button Button_secondary ProductButton_addButton__y5b_u ProductButton_secondary__qDYDR ProductButton_normal__jOR_t cd-add-to-cart js-cd-add-to-cart "
                           data-product-id="product_3"
                           data-product-image="           https://sam-five-snowy.vercel.app/images/3.png"
-                          data-product-name="كرتون 10 كيلو روبيان جامبو مقشر"
+                          data-product-name="10 kg Peeled Jumbo Shrimp Box"
                           data-product-price={97.37}
                           data-class-add="btn_add_3"
                           data-class-remove="btn_remove_3"
@@ -2560,7 +2558,7 @@ function Landing(props: { handleNextPage: any }) {
                           data-qquantity-id="qquantity_3"
                         >
                           <span className="Button_content btn_add_3">
-                            إضافة
+                            Add
                           </span>
                           <div className="Loader_loader__4A5f1 Button_loader__I8AK4 btn_remove_3 d-none" />
                         </a>
@@ -2654,7 +2652,7 @@ function Landing(props: { handleNextPage: any }) {
                       }}
                     >
                       <img
-                        alt="كرتون سيباس تركي"
+                        alt="Turkish Sea Bass Box"
                         src="/turkish-sea-bass.jpg"
                         decoding="async"
                         data-nimg="fill"
@@ -2683,24 +2681,24 @@ function Landing(props: { handleNextPage: any }) {
                   <div className="ProductCardHorizontal_info__FEa7G">
                     <div>
                       <h5 className="Typography_h5__MRrA0 ProductCardHorizontal_name__z0EMu">
-                        كرتون سيباس تركي
+                        Turkish Sea Bass Box
                       </h5>
                       <p className="Typography_p8 ProductCardHorizontal_description__YSUl2">
-                        كرتون 10 كيلو سيباس تركي حجم 1000-1500.
+                        10 kg Turkish Sea Bass Box Size 1000-1500.
                       </p>
                     </div>
                     <div
                       className="ProductCardHorizontal_priceWrapper__3OYMk"
                       data-id="turkish-sea-bass"
                     >
-                      <h5 className="Typography_h5__MRrA0">97.09 د.ا</h5>
+                      <h5 className="Typography_h5__MRrA0">97.09 ADE</h5>
                       <div className="a_pluss_4">
                         <a
                           type="button"
                           onClick={() => {
                             handleAddtoCart({
                               id: 0,
-                              name: 'كرتون 10 كيلو سيباس تركي حجم 1000-1500.',
+                              name: '10 kg Turkish Sea Bass Box Size 1000-1500.',
                               price: '97.09',
                               img: '/kuwaiti-jumbo-robian-10kg.jpg',
                             });
@@ -2708,7 +2706,7 @@ function Landing(props: { handleNextPage: any }) {
                           className="Button_button Button_secondary ProductButton_addButton__y5b_u ProductButton_secondary__qDYDR ProductButton_normal__jOR_t cd-add-to-cart js-cd-add-to-cart "
                           data-product-id="product_4"
                           data-product-image="           https://sam-five-snowy.vercel.app/images/3.png"
-                          data-product-name="كرتون 10 كيلو سيباس تركي حجم 1000-1500."
+                          data-product-name="10 kg Turkish Sea Bass Box Size 1000-1500."
                           data-product-price={389.09}
                           data-class-add="btn_add_4"
                           data-class-remove="btn_remove_4"
@@ -2717,7 +2715,7 @@ function Landing(props: { handleNextPage: any }) {
                           data-quantity-id="quantity_4"
                         >
                           <span className="Button_content btn_add_4">
-                            إضافة
+                            Add
                           </span>
                           <div className="Loader_loader__4A5f1 Button_loader__I8AK4 btn_remove_4 d-none" />
                         </a>
@@ -2811,7 +2809,7 @@ function Landing(props: { handleNextPage: any }) {
                       }}
                     >
                       <img
-                        alt="روبيان إيراني وسط"
+                        alt="Medium Iranian Shrimp"
                         src="/iranian-medium-robian-1kg.jpg"
                         decoding="async"
                         data-nimg="fill"
@@ -2840,24 +2838,24 @@ function Landing(props: { handleNextPage: any }) {
                   <div className="ProductCardHorizontal_info__FEa7G">
                     <div>
                       <h5 className="Typography_h5__MRrA0 ProductCardHorizontal_name__z0EMu">
-                        روبيان إيراني وسط
+                        Medium Iranian Shrimp
                       </h5>
                       <p className="Typography_p8 ProductCardHorizontal_description__YSUl2">
-                        1 كيلو روبيان إيراني وسط.
+                        1 kg Medium Iranian Shrimp.
                       </p>
                     </div>
                     <div
                       className="ProductCardHorizontal_priceWrapper__3OYMk"
                       data-id="iranian-medium-robian-1kg"
                     >
-                      <h5 className="Typography_h5__MRrA0">97.586 د.ا</h5>
+                      <h5 className="Typography_h5__MRrA0">97.586 ADE</h5>
                       <div className="a_pluss_5">
                         <a
                           type="button"
                           onClick={() => {
                             handleAddtoCart({
                               id: 0,
-                              name: '1 كيلو روبيان إيراني وسط.',
+                              name: '1 kg Medium Iranian Shrimp.',
                               price: '97.5',
                               img: '/kuwaiti-jumbo-robian-10kg.jpg',
                             });
@@ -2865,7 +2863,7 @@ function Landing(props: { handleNextPage: any }) {
                           className="Button_button Button_secondary ProductButton_addButton__y5b_u ProductButton_secondary__qDYDR ProductButton_normal__jOR_t cd-add-to-cart js-cd-add-to-cart "
                           data-product-id="product_5"
                           data-product-image="/iranian-medium-robian-1kg.jpg"
-                          data-product-name="1 كيلو روبيان إيراني وسط."
+                          data-product-name="1 kg Medium Iranian Shrimp."
                           data-product-price="4219.586"
                           data-class-add="btn_add_5"
                           data-class-remove="btn_remove_5"
@@ -2874,7 +2872,7 @@ function Landing(props: { handleNextPage: any }) {
                           data-quantity-id="quantity_5"
                         >
                           <span className="Button_content btn_add_5">
-                            إضافة
+                            Add
                           </span>
                           <div className="Loader_loader__4A5f1 Button_loader__I8AK4 btn_remove_5 d-none" />
                         </a>
@@ -2963,7 +2961,7 @@ function Landing(props: { handleNextPage: any }) {
                       }}
                     >
                       <img
-                        alt="سلمون نيجيري"
+                        alt="Nigerian Salmon"
                         src="/nigerian-salmon.jpg"
                         decoding="async"
                         data-nimg="fill"
@@ -2992,29 +2990,29 @@ function Landing(props: { handleNextPage: any }) {
                   <div className="ProductCardHorizontal_info__FEa7G">
                     <div>
                       <h5 className="Typography_h5__MRrA0 ProductCardHorizontal_name__z0EMu">
-                        سلمون نيجيري
+                        Nigerian Salmon
                       </h5>
                       <p className="Typography_p8 ProductCardHorizontal_description__YSUl2">
-                        1 كيلو سلمون نيجيري.
+                        1 kg Nigerian Salmon.
                       </p>
                     </div>
                     <div
                       className="ProductCardHorizontal_priceWrapper__3OYMk"
                       data-id="nigerian-salmon"
                     >
-                      <h5 className="Typography_h5__MRrA0">69.910 د.ا</h5>
+                      <h5 className="Typography_h5__MRrA0">69.910 ADE</h5>
                       <div className="a_pluss_7">
                         <a
                           type="button"
                           className="Button_button Button_secondary ProductButton_addButton__y5b_u ProductButton_secondary__qDYDR ProductButton_normal__jOR_t cd-add-to-cart js-cd-add-to-cart "
                           data-product-id="product_7"
                           data-product-image="/nigerian-salmon.jpg"
-                          data-product-name="1 كيلو سلمون نيجيري."
+                          data-product-name="1 kg Nigerian Salmon."
                           data-product-price="69.910"
                           onClick={() => {
                             handleAddtoCart({
                               id: 0,
-                              name: '1 كيلو سلمون نيجيري',
+                              name: '1 kg Nigerian Salmon',
                               price: '69.91',
                               img: '/kuwaiti-jumbo-robian-10kg.jpg',
                             });
@@ -3026,7 +3024,7 @@ function Landing(props: { handleNextPage: any }) {
                           data-quantity-id="quantity_7"
                         >
                           <span className="Button_content btn_add_7">
-                            إضافة
+                            Add
                           </span>
                           <div className="Loader_loader__4A5f1 Button_loader__I8AK4 btn_remove_7 d-none" />
                         </a>
@@ -3115,7 +3113,7 @@ function Landing(props: { handleNextPage: any }) {
                       }}
                     >
                       <img
-                        alt="روبيان كبير"
+                        alt="Large Shrimp"
                         src="/large-robian-1kg.jpg"
                         decoding="async"
                         data-nimg="fill"
@@ -3144,10 +3142,10 @@ function Landing(props: { handleNextPage: any }) {
                   <div className="ProductCardHorizontal_info__FEa7G">
                     <div>
                       <h5 className="Typography_h5__MRrA0 ProductCardHorizontal_name__z0EMu">
-                        روبيان كبير
+                        Large Shrimp
                       </h5>
                       <p className="Typography_p8 ProductCardHorizontal_description__YSUl2">
-                        1 كيلو روبيان كبير.
+                        1 kg Large Shrimp.
                       </p>
                     </div>
                     <div
@@ -3155,21 +3153,21 @@ function Landing(props: { handleNextPage: any }) {
                       className="ProductCardHorizontal_priceWrapper__3OYMk"
                       data-id="large-robian-1kg"
                     >
-                      <h5 className="Typography_h5__MRrA0">97.72 د.ا</h5>
+                      <h5 className="Typography_h5__MRrA0">97.72 ADE</h5>
                       <div className="a_pluss_6">
                         <a
                           type="button"
                           className="Button_button Button_secondary ProductButton_addButton__y5b_u ProductButton_secondary__qDYDR ProductButton_normal__jOR_t cd-add-to-cart js-cd-add-to-cart "
                           data-product-id="product_6"
                           data-product-image="/large-robian-1kg.jpg"
-                          data-product-name="1 كيلو روبيان كبير."
+                          data-product-name="1 kg Large Shrimp."
                           data-product-price="54.72"
                           data-class-add="btn_add_6"
                           data-class-remove="btn_remove_6"
                           onClick={() => {
                             handleAddtoCart({
                               id: 0,
-                              name: '1 كيلو سلمون نيجيري',
+                              name: '1 kg Nigerian Salmon',
                               price: '97.72',
                               img: '/kuwaiti-jumbo-robian-10kg.jpg',
                             });
@@ -3179,7 +3177,7 @@ function Landing(props: { handleNextPage: any }) {
                           data-quantity-id="quantity_6"
                         >
                           <span className="Button_content btn_add_6">
-                            إضافة
+                            Add
                           </span>
                           <div className="Loader_loader__4A5f1 Button_loader__I8AK4 btn_remove_6 d-none" />
                         </a>
@@ -3267,7 +3265,7 @@ function Landing(props: { handleNextPage: any }) {
                       }}
                     >
                       <img
-                        alt="روبيان كبير"
+                        alt="Grouper Fillet"
                         src="/pr-2.png"
                         decoding="async"
                         data-nimg="fill"
@@ -3296,12 +3294,10 @@ function Landing(props: { handleNextPage: any }) {
                   <div className="ProductCardHorizontal_info__FEa7G">
                     <div>
                       <h5 className="Typography_h5__MRrA0 ProductCardHorizontal_name__z0EMu">
-
-                        فيليه هامور
+                        Grouper Fillet
                       </h5>
                       <p className="Typography_p8 ProductCardHorizontal_description__YSUl2">
-                        1 كيلو
-                        فيليه هامور .
+                        1 kg Grouper Fillet.
                       </p>
                     </div>
                     <div
@@ -3309,21 +3305,21 @@ function Landing(props: { handleNextPage: any }) {
                       className="ProductCardHorizontal_priceWrapper__3OYMk"
                       data-id="large-robian-1kg"
                     >
-                      <h5 className="Typography_h5__MRrA0">100.72 د.ا</h5>
+                      <h5 className="Typography_h5__MRrA0">100.72 ADE</h5>
                       <div className="a_pluss_6">
                         <a
                           type="button"
                           className="Button_button Button_secondary ProductButton_addButton__y5b_u ProductButton_secondary__qDYDR ProductButton_normal__jOR_t cd-add-to-cart js-cd-add-to-cart "
                           data-product-id="product_6"
                           data-product-image="/large-robian-1kg.jpg"
-                          data-product-name="1 كيلو روبيان كبير."
+                          data-product-name="1 kg Large Shrimp."
                           data-product-price="54.72"
                           data-class-add="btn_add_6"
                           data-class-remove="btn_remove_6"
                           onClick={() => {
                             handleAddtoCart({
                               id: 0,
-                              name: '1 كيلو  فيليه هامور ',
+                              name: '1 kg Grouper Fillet',
                               price: '100.72',
                               img: '/pr-2.png',
                             });
@@ -3333,7 +3329,7 @@ function Landing(props: { handleNextPage: any }) {
                           data-quantity-id="quantity_6"
                         >
                           <span className="Button_content btn_add_6">
-                            إضافة
+                            Add
                           </span>
                           <div className="Loader_loader__4A5f1 Button_loader__I8AK4 btn_remove_6 d-none" />
                         </a>
@@ -3415,7 +3411,7 @@ function Landing(props: { handleNextPage: any }) {
                 data-nimg="fill"
                 className="asyncicon"
                 src="/459307463_1044724404108266_4808211461608369674_n.jpg"
-                alt="تنويه"
+                alt="Notice"
               />
             </span>
             <div className="MerchantCard_deliveryTime__hFF6r">
@@ -3434,7 +3430,7 @@ function Landing(props: { handleNextPage: any }) {
                   />
                 </span>
               </span>
-              <p className="Typography_p8">الموقع الرسمي</p>
+              <p className="Typography_p8">Official Website</p>
             </div>
           </div>
         </div>
@@ -3451,14 +3447,14 @@ function Landing(props: { handleNextPage: any }) {
                   </p>
                 </span>
                 <h5 className="Typography_h5__MRrA0">
-                  <span>{total.toFixed(2)} د.ا</span>
+                  <span>{total.toFixed(2)} ADE</span>
                 </h5>
               </div>
               <div
                 onClick={
                   () => {
                     if (total.toFixed(2) < 0.1) {
-                      alert('السلة فارغة')
+                      alert('Cart is empty')
                     } else {
                       props.handleNextPage()
 
@@ -3469,7 +3465,7 @@ function Landing(props: { handleNextPage: any }) {
                 style={{ cursor: 'pointer' }}
               >
                 <a style={{ display: 'flex', gap: 5, zIndex: 9999999999 }}>
-                  <h5 className="Typography_h5__MRrA0">اذهب الى السلة</h5>
+                  <h5 className="Typography_h5__MRrA0">Go to Cart</h5>
                   <span
                     data-test-id=""
                     className="Icon_icon CartButtonMob_icon__fwWfH"
@@ -3506,11 +3502,11 @@ function Landing(props: { handleNextPage: any }) {
           >
             <div className="Footer_info__7Pspt">
               <div className="Footer_legalLinks__fOusS">
-                <a href="#">الشروط والأحكام</a>
-                <a href="#">سياسة الخصوصية</a>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Privacy Policy</a>
               </div>
               <p className="Footer_copyright__zeUcK">
-                © 2024 الشركة الوطنية للاسماك
+                © 2024 National Fish Company
               </p>
             </div>
             <div className="Footer_socialLinks__Znatd">
@@ -3570,7 +3566,6 @@ function Landing(props: { handleNextPage: any }) {
             </div>
           </div>
         </footer>
-        {/* Shoping Card Model */}
       </div>
     </>
   );
