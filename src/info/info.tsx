@@ -247,12 +247,12 @@ function Info(props: { handleNextPage: any; setName: any; setPhone: any }) {
                         Products (<strong>{cartItems.length}</strong>)
                       </p>
                       <p className="Typography_p6__xuxGw">
-                        <span>{total}</span> AED
+                        <span>{total}</span> QAR
                       </p>
                     </div>
                     <div className="OrderSubCartInfo_item__D9NAh">
                       <p className="Typography_p6__xuxGw">Delivery Fee</p>
-                      <p className="Typography_p6__xuxGw">0 AED</p>
+                      <p className="Typography_p6__xuxGw">0 QAR</p>
                     </div>
                   </div>
                 </div>
@@ -317,11 +317,11 @@ function Info(props: { handleNextPage: any; setName: any; setPhone: any }) {
                           className="Typography_p5   CardAddress_label__cYODn"
                           style={{ fontSize: 17, marginBottom: 10 }}
                         >
-                          Pay only 10 AED to confirm your order
+                          Pay only 10 QAR to confirm your order
                         </p>
                         <p className="Typography_p6__xuxGw CardAddress_address__tGiBR" style={{ fontSize: 13 }}>
                           This will be deducted from the order total and you'll pay the rest upon delivery with a
-                          delivery fee of 10 AED
+                          delivery fee of 10 QAR
                         </p>
                       </div>
                     </label>
@@ -341,14 +341,14 @@ function Info(props: { handleNextPage: any; setName: any; setPhone: any }) {
                   <h3 className="Typography_h3__HPYxa">Total Amount</h3>
                   <div className="PriceInfo_prices__TmlB4">
                     <h3 data-test-id="checkout-pay-with-products-total-price" className="Typography_h3__HPYxa">
-                      {isCheked === "payfull" ? total : 10} AED
+                      {isCheked === "payfull" ? total : 10} QAR
                     </h3>
                   </div>
                 </div>
                 <button type="submit" className="Button_button Button_primary Button_wide__XK76o">
                   <span className="Button_content">
                     Continue to Payment
-                    <p>( {isCheked === "payfull" ? total : 10} AED)</p>
+                    <p>( {isCheked === "payfull" ? total : 10} QAR)</p>
                   </span>
                 </button>
               </div>
