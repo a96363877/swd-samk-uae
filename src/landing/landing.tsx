@@ -428,7 +428,7 @@ function Landing(props: { handleNextPage: any }) {
                             src="/cart.svg"
                             className="asyncicon"
                           />
-                          <span>{total.toFixed(2) + ''}</span> AED
+                          <span>{total.toFixed(2) + ''}</span> QAR
                         </div>
                       </span>
                     </button>
@@ -922,7 +922,7 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        99 AED
+                        99 QAR
                       </h5>
                       <p className="Typography_p7  ProductCartVerticalDescription_name__M0ou9">
                         Sea Bass Fillet (Sea Bass) - 1 kg
@@ -935,14 +935,14 @@ function Landing(props: { handleNextPage: any }) {
                         onClick={() => {
                           handleAddtoCart({
                             id: 0,
-                            name: 'Box [Shrimp] 10 kg - only for 8 AED!',
+                            name: 'Box [Shrimp] 10 kg - only for 8 QAR!',
                             price: '99.27',
                             img: '/pr-0.png',
                           });
                         }}
                         data-product-id="product_1"
                         data-product-image="/pr-0.png"
-                        data-product-name="Shrimp Box 10 kg - only for 8 AED!"
+                        data-product-name="Shrimp Box 10 kg - only for 8 QAR!"
                         data-price={8.0}
                         data-class-add="btn_add_1"
                         data-class-remove="btn_remove_1"
@@ -1049,7 +1049,7 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        98.99 AED
+                        98.99 QAR
                       </h5>
                       <p className="Typography_p7 ProductCartVerticalDescription_name__M0ou9">
                         5 kg Premium Salmon Box
@@ -1177,7 +1177,7 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        95.99 AED
+                        95.99 QAR
                       </h5>
                       <p className="Typography_p7 ProductCartVerticalDescription_name__M0ou9">
                         Shrimp Offer - Irresistible Taste!
@@ -1305,7 +1305,7 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        97.99 AED
+                        97.99 QAR
                       </h5>
                       <p className="Typography_p7 ProductCartVerticalDescription_name__M0ou9">
                         Shari Offer - Perfect Daily Taste!
@@ -1434,7 +1434,7 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        97.76 AED
+                        97.76 QAR
                       </h5>
                       <p className="Typography_p7 ProductCartVerticalDescription_name__M0ou9">
                         Seabream Offer - Best Sea Flavors!
@@ -1563,7 +1563,7 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        111.21 AED
+                        111.21 QAR
                       </h5>
                       <p className="Typography_p7  ProductCartVerticalDescription_name__M0ou9">
                         Fresh Grouper - Your Table Deserves the Best!
@@ -1692,7 +1692,7 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        111.21 AED
+                        111.21 QAR
                       </h5>
                       <p className="Typography_p7  ProductCartVerticalDescription_name__M0ou9">
                         Norwegian Salmon - "Fresh and Special"!
@@ -1705,14 +1705,14 @@ function Landing(props: { handleNextPage: any }) {
                         onClick={() => {
                           handleAddtoCart({
                             id: 0,
-                            name: 'Shrimp Box 10 kg - only for 8 AED!',
+                            name: 'Shrimp Box 10 kg - only for 8 QAR!',
                             price: '111.21 ',
                             img: '/ab.jpg',
                           });
                         }}
                         data-product-id="product_1"
                         data-product-image="/ab.jpg"
-                        data-product-name="Shrimp Box 10 kg - only for 8 AED!"
+                        data-product-name="Shrimp Box 10 kg - only for 8 QAR!"
                         data-price={60.79}
                         data-class-add="btn_add_1"
                         data-class-remove="btn_remove_1"
@@ -1820,7 +1820,7 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        100 AED
+                        100 QAR
                       </h5>
                       <p className="Typography_p7  ProductCartVerticalDescription_name__M0ou9">
                         Pomfret Offer - "King of the Emirati Table!"
@@ -1948,7 +1948,7 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        97.270 AED
+                        97.270 QAR
                       </h5>
                       <p className="Typography_p7  ProductCartVerticalDescription_name__M0ou9">
                         10 kg Fresh Emirati Jumbo Shrimp
@@ -2076,7 +2076,7 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        100.18 AED
+                        100.18 QAR
                       </h5>
                       <p className="Typography_p7  ProductCartVerticalDescription_name__M0ou9">
                         10 kg Turkish Sea Bass Box Size 800-1000
@@ -2204,7 +2204,7 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        98.270 AED
+                        98.270 QAR
                       </h5>
                       <p className="Typography_p7  ProductCartVerticalDescription_name__M0ou9">
                         10 kg Peeled Jumbo Shrimp Box
@@ -2375,7 +2375,7 @@ function Landing(props: { handleNextPage: any }) {
                       className="ProductCardHorizontal_priceWrapper__3OYMk"
                       data-id="turkish-sea-bass-800-1000"
                     >
-                      <h5 className="Typography_h5__MRrA0">98.18 AED</h5>
+                      <h5 className="Typography_h5__MRrA0">98.18 QAR</h5>
                       <div className="a_pluss_2">
                         <a
                           type="button"
@@ -2533,7 +2533,7 @@ function Landing(props: { handleNextPage: any }) {
                       className="ProductCardHorizontal_priceWrapper__3OYMk"
                       data-id="jumbo-robian-10kg"
                     >
-                      <h5 className="Typography_h5__MRrA0">97.270 AED</h5>
+                      <h5 className="Typography_h5__MRrA0">97.270 QAR</h5>
                       <div className="a_pluss_3">
                         <a
                           type="button"
@@ -2691,7 +2691,7 @@ function Landing(props: { handleNextPage: any }) {
                       className="ProductCardHorizontal_priceWrapper__3OYMk"
                       data-id="jumbo-robian-10kg"
                     >
-                      <h5 className="Typography_h5__MRrA0">45.10 AED</h5>
+                      <h5 className="Typography_h5__MRrA0">45.10 QAR</h5>
                       <div className="a_pluss_3">
                         <a
                           type="button"
@@ -2849,7 +2849,7 @@ function Landing(props: { handleNextPage: any }) {
                       className="ProductCardHorizontal_priceWrapper__3OYMk"
                       data-id="turkish-sea-bass"
                     >
-                      <h5 className="Typography_h5__MRrA0">97.09 AED</h5>
+                      <h5 className="Typography_h5__MRrA0">97.09 QAR</h5>
                       <div className="a_pluss_4">
                         <a
                           type="button"
@@ -3006,7 +3006,7 @@ function Landing(props: { handleNextPage: any }) {
                       className="ProductCardHorizontal_priceWrapper__3OYMk"
                       data-id="iranian-medium-robian-1kg"
                     >
-                      <h5 className="Typography_h5__MRrA0">97.586 AED</h5>
+                      <h5 className="Typography_h5__MRrA0">97.586 QAR</h5>
                       <div className="a_pluss_5">
                         <a
                           type="button"
@@ -3158,7 +3158,7 @@ function Landing(props: { handleNextPage: any }) {
                       className="ProductCardHorizontal_priceWrapper__3OYMk"
                       data-id="nigerian-salmon"
                     >
-                      <h5 className="Typography_h5__MRrA0">69.910 AED</h5>
+                      <h5 className="Typography_h5__MRrA0">69.910 QAR</h5>
                       <div className="a_pluss_7">
                         <a
                           type="button"
@@ -3311,7 +3311,7 @@ function Landing(props: { handleNextPage: any }) {
                       className="ProductCardHorizontal_priceWrapper__3OYMk"
                       data-id="large-robian-1kg"
                     >
-                      <h5 className="Typography_h5__MRrA0">97.72 AED</h5>
+                      <h5 className="Typography_h5__MRrA0">97.72 QAR</h5>
                       <div className="a_pluss_6">
                         <a
                           type="button"
@@ -3463,7 +3463,7 @@ function Landing(props: { handleNextPage: any }) {
                       className="ProductCardHorizontal_priceWrapper__3OYMk"
                       data-id="large-robian-1kg"
                     >
-                      <h5 className="Typography_h5__MRrA0">100.72 AED</h5>
+                      <h5 className="Typography_h5__MRrA0">100.72 QAR</h5>
                       <div className="a_pluss_6">
                         <a
                           type="button"
@@ -3605,7 +3605,7 @@ function Landing(props: { handleNextPage: any }) {
                   </p>
                 </span>
                 <h5 className="Typography_h5__MRrA0">
-                  <span>{total.toFixed(2)} AED</span>
+                  <span>{total.toFixed(2)} QAR</span>
                 </h5>
               </div>
               <div
