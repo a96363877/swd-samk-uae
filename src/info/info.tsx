@@ -12,7 +12,7 @@ function Info(props: { handleNextPage: any; setName: any; setPhone: any }) {
     props.handleNextPage()
   }
   const [isCheked, setIsChecked] = useState("payfull")
-  const [isSelecedted, setIsSelected] = useState(false)
+  const [isSelecedted, setIsSelected] = useState('false')
 
   return (
     <>
@@ -188,13 +188,18 @@ function Info(props: { handleNextPage: any; setName: any; setPhone: any }) {
                 </div>
               </div>
               <div className="MarketplaceCardPayment_topContent__K5bEQ" style={{ marginTop: "10px" }}>
-                <h3 className="Typography_h3__HPYxa">Payment Method</h3>
+                <h3 className="Typography_h3__HPYxa">Payment Method</h3><span style={{fontSize:11,position:'absolute',top:'-20px',left:0,right:0,textAlign:'center'}}>                   20% cashback
+</span>
+
+
                 <div
                   data-analytic-label="selectPaymentMethod"
                   data-test-id="choosePayMethodBtn"
                   className="PaymentMethods_paymentMethod__7SC8Y"
-                  style={{ background: "#f2f2f2" }}
-                  onClick={() => setIsSelected(true)}
+                  style={{ background: "#f2f2f2",border:isSelecedted==='true'?"1px green solid":'' }}
+                  onClick={() => {
+                      setIsSelected('true')
+                  }}
                 >
                   <span data-test-id="" className="Icon_icon PaymentMethods_icon__m0OGl">
                     <div style={{ display: "flex" }}>
@@ -224,14 +229,55 @@ function Info(props: { handleNextPage: any; setName: any; setPhone: any }) {
                       />
                     </div>
                   </span>
+                  <p className="Typography_p3__dH_h7 PaymentMethods_label__7E6O1" ></p>
+                  <span
+                    data-test-id=""
+                    className="Icon_icon PaymentMethods_rightIcon__Y_bPY"
+                    style={{ width: 16, height: 16 }}
+                  >
+                  </span>
+                </div>  <div
+                  data-analytic-label="selectPaymentMethod"
+                  data-test-id="choosePayMethodBtn"
+                  className="PaymentMethods_paymentMethod__7SC8Y"
+                  style={{ background: "#f2f2f2",border:isSelecedted==='false'?"1px green solid":'' }}
+                  onClick={() => {
+                      setIsSelected('false')
+                  }}
+                 
+                >
+                  <span data-test-id="" className="Icon_icon PaymentMethods_icon__m0OGl">
+
+                    <div style={{ display: "flex" }}>
+                    
+                      <img
+                        alt="Mastercard"
+                        src="/dublogo-lg.svg"
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{ width: 70, height: 40, marginLeft: 10 }}
+                        className="asyncicon"
+                      />
+                      <img
+                        alt="Mada"
+                        src="/ryab.svg"
+                        decoding="async"
+                        data-nimg="fill"
+                        style={{ width: 140, height:40, marginLeft: 10 }}
+                        className="asyncicon"
+                      />
+                    </div>
+                  </span>
                   <p className="Typography_p3__dH_h7 PaymentMethods_label__7E6O1"></p>
                   <span
                     data-test-id=""
                     className="Icon_icon PaymentMethods_rightIcon__Y_bPY"
                     style={{ width: 16, height: 16 }}
                   >
-                    <input type="checkbox" checked={isSelecedted} />
                   </span>
+
+                  <span className="badge" style={{fontSize:11,color:'green',fontWeight:500}}>                   20% cashback
+</span>
                 </div>
                 <div className="OrderInfo_wrapper__GCgIK">
                   <div className="OrderSubCartInfo_cart__81olU">

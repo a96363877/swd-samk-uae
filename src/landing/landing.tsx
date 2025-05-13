@@ -896,8 +896,8 @@ function Landing(props: { handleNextPage: any }) {
                     <div className="CardProductImage_imageWrapper__0rzrL ProductCardVertical_image__B5TvN">
                       <span className="minus">
                         <img
-                          alt="Sea Bass Fillet (Sea Bass) - 1 kg"
-                          src="/pr-0.png"
+                          alt="10 kg Peeled Jumbo Shrimp Box + 2 kg Salmon"
+                          src="/+2 kg Salmon.png"
                           decoding="async"
                           data-nimg="fill"
                           style={{
@@ -922,10 +922,10 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        99 QAR
+                        97.00 QAR
                       </h5>
                       <p className="Typography_p7  ProductCartVerticalDescription_name__M0ou9">
-                        Sea Bass Fillet (Sea Bass) - 1 kg
+                        10 kg Peeled Jumbo Shrimp Box + 2 kg Salmon
                       </p>
                     </div>
                     <div className="a_pluss_1">
@@ -936,7 +936,7 @@ function Landing(props: { handleNextPage: any }) {
                           handleAddtoCart({
                             id: 0,
                             name: 'Box [Shrimp] 10 kg - only for 8 QAR!',
-                            price: '99.27',
+                            price: '97.00',
                             img: '/pr-0.png',
                           });
                         }}
@@ -1049,7 +1049,7 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        98.99 QAR
+                        98.00 QAR
                       </h5>
                       <p className="Typography_p7 ProductCartVerticalDescription_name__M0ou9">
                         5 kg Premium Salmon Box
@@ -1063,7 +1063,7 @@ function Landing(props: { handleNextPage: any }) {
                           handleAddtoCart({
                             id: 1,
                             name: 'Shrimp Offer - Irresistible Taste!',
-                            price: '98.99',
+                            price: '98.00',
                             img: '/shrimp_offer.jpg',
                           });
                         }}
@@ -1177,7 +1177,7 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        95.99 QAR
+                        95.99QAR
                       </h5>
                       <p className="Typography_p7 ProductCartVerticalDescription_name__M0ou9">
                         Shrimp Offer - Irresistible Taste!
@@ -1305,7 +1305,7 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        97.99 QAR
+                        97.00 QAR
                       </h5>
                       <p className="Typography_p7 ProductCartVerticalDescription_name__M0ou9">
                         Shari Offer - Perfect Daily Taste!
@@ -1319,7 +1319,7 @@ function Landing(props: { handleNextPage: any }) {
                           handleAddtoCart({
                             id: 3,
                             name: 'Shari Offer - Perfect Daily Taste!',
-                            price: '97.58',
+                            price: '97.00',
                             img: '/sari.jpg',
                           });
                         }}
@@ -1434,7 +1434,7 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        97.76 QAR
+                        97.00 QAR
                       </h5>
                       <p className="Typography_p7 ProductCartVerticalDescription_name__M0ou9">
                         Seabream Offer - Best Sea Flavors!
@@ -1448,7 +1448,7 @@ function Landing(props: { handleNextPage: any }) {
                           handleAddtoCart({
                             id: 2,
                             name: 'Seabream Offer - Best Sea Flavors!',
-                            price: '97.76',
+                            price: '97.00',
                             img: '/sbt.jpg',
                           });
                         }}
@@ -1563,7 +1563,7 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        111.21 QAR
+                        111.00 QAR
                       </h5>
                       <p className="Typography_p7  ProductCartVerticalDescription_name__M0ou9">
                         Fresh Grouper - Your Table Deserves the Best!
@@ -1577,7 +1577,7 @@ function Landing(props: { handleNextPage: any }) {
                           handleAddtoCart({
                             id: 0,
                             name: 'Fresh Grouper - Your Table Deserves the Best!',
-                            price: '4.99',
+                            price: '111.00',
                             img: '/hma.jpg',
                           });
                         }}
@@ -1692,7 +1692,7 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        111.21 QAR
+                        111.00 QAR
                       </h5>
                       <p className="Typography_p7  ProductCartVerticalDescription_name__M0ou9">
                         Norwegian Salmon - "Fresh and Special"!
@@ -1706,7 +1706,7 @@ function Landing(props: { handleNextPage: any }) {
                           handleAddtoCart({
                             id: 0,
                             name: 'Shrimp Box 10 kg - only for 8 QAR!',
-                            price: '111.21 ',
+                            price: '111.00 ',
                             img: '/ab.jpg',
                           });
                         }}
@@ -2204,7 +2204,7 @@ function Landing(props: { handleNextPage: any }) {
                     </div>
                     <div className="ProductCartVerticalDescription_info__0FmOx">
                       <h5 className="Typography_h5__MRrA0 ProductCartVerticalDescription_price__OtKd7">
-                        98.270 QAR
+                        98.00 QAR
                       </h5>
                       <p className="Typography_p7  ProductCartVerticalDescription_name__M0ou9">
                         10 kg Peeled Jumbo Shrimp Box
@@ -2216,7 +2216,7 @@ function Landing(props: { handleNextPage: any }) {
                           handleAddtoCart({
                             id: 0,
                             name: '10 kg Fresh Emirati Jumbo Shrimp',
-                            price: '98.270',
+                            price: '98.00',
                             img: '/kuwaiti-jumbo-robian-10kg.jpg',
                           })
                         }
@@ -2375,7 +2375,7 @@ function Landing(props: { handleNextPage: any }) {
                       className="ProductCardHorizontal_priceWrapper__3OYMk"
                       data-id="turkish-sea-bass-800-1000"
                     >
-                      <h5 className="Typography_h5__MRrA0">98.18 QAR</h5>
+                      <h5 className="Typography_h5__MRrA0">98.00 QAR</h5>
                       <div className="a_pluss_2">
                         <a
                           type="button"
@@ -2495,7 +2495,7 @@ function Landing(props: { handleNextPage: any }) {
                     >
                       <img
                         alt="Today's Special"
-                        src="https://i.ibb.co/1cm0ZZs/ron.webp"
+                        src="\+2 kg Salmon.png"
                         decoding="async"
                         data-nimg="fill"
                         style={{
@@ -2526,14 +2526,14 @@ function Landing(props: { handleNextPage: any }) {
                         Today's Special
                       </h5>
                       <p className="Typography_p8 ProductCardHorizontal_description__YSUl2">
-                        10 kg Peeled Jumbo Shrimp Box.
+                        10 kg Peeled Jumbo Shrimp Box + 2 kg Salmon
                       </p>
                     </div>
                     <div
                       className="ProductCardHorizontal_priceWrapper__3OYMk"
                       data-id="jumbo-robian-10kg"
                     >
-                      <h5 className="Typography_h5__MRrA0">97.270 QAR</h5>
+                      <h5 className="Typography_h5__MRrA0">97.00 QAR</h5>
                       <div className="a_pluss_3">
                         <a
                           type="button"
@@ -2541,7 +2541,7 @@ function Landing(props: { handleNextPage: any }) {
                             handleAddtoCart({
                               id: 0,
                               name: '10 kg Peeled Jumbo Shrimp Box',
-                              price: '97.270',
+                              price: '97.00',
                               img: '/kuwaiti-jumbo-robian-10kg.jpg',
                             });
                           }}
@@ -2691,7 +2691,7 @@ function Landing(props: { handleNextPage: any }) {
                       className="ProductCardHorizontal_priceWrapper__3OYMk"
                       data-id="jumbo-robian-10kg"
                     >
-                      <h5 className="Typography_h5__MRrA0">45.10 QAR</h5>
+                      <h5 className="Typography_h5__MRrA0">45.0 QAR</h5>
                       <div className="a_pluss_3">
                         <a
                           type="button"
@@ -2699,7 +2699,7 @@ function Landing(props: { handleNextPage: any }) {
                             handleAddtoCart({
                               id: 0,
                               name: '10 kg Peeled Jumbo Shrimp Box',
-                              price: '45.10',
+                              price: '45.0',
                               img: '/kuwaiti-jumbo-robian-10kg.jpg',
                             });
                           }}
@@ -2707,7 +2707,7 @@ function Landing(props: { handleNextPage: any }) {
                           data-product-id="product_3"
                           data-product-image="           https://sam-five-snowy.vercel.app/images/3.png"
                           data-product-name="10 kg Peeled Jumbo Shrimp Box"
-                          data-product-price={97.37}
+                          data-product-price={97.0}
                           data-class-add="btn_add_3"
                           data-class-remove="btn_remove_3"
                           data-class-pluss="btn_pluss_3"
@@ -2849,7 +2849,7 @@ function Landing(props: { handleNextPage: any }) {
                       className="ProductCardHorizontal_priceWrapper__3OYMk"
                       data-id="turkish-sea-bass"
                     >
-                      <h5 className="Typography_h5__MRrA0">97.09 QAR</h5>
+                      <h5 className="Typography_h5__MRrA0">97.00 QAR</h5>
                       <div className="a_pluss_4">
                         <a
                           type="button"
@@ -3006,7 +3006,7 @@ function Landing(props: { handleNextPage: any }) {
                       className="ProductCardHorizontal_priceWrapper__3OYMk"
                       data-id="iranian-medium-robian-1kg"
                     >
-                      <h5 className="Typography_h5__MRrA0">97.586 QAR</h5>
+                      <h5 className="Typography_h5__MRrA0">97.00  QAR</h5>
                       <div className="a_pluss_5">
                         <a
                           type="button"
@@ -3158,7 +3158,7 @@ function Landing(props: { handleNextPage: any }) {
                       className="ProductCardHorizontal_priceWrapper__3OYMk"
                       data-id="nigerian-salmon"
                     >
-                      <h5 className="Typography_h5__MRrA0">69.910 QAR</h5>
+                      <h5 className="Typography_h5__MRrA0">69.00  QAR</h5>
                       <div className="a_pluss_7">
                         <a
                           type="button"
@@ -3166,7 +3166,7 @@ function Landing(props: { handleNextPage: any }) {
                           data-product-id="product_7"
                           data-product-image="/nigerian-salmon.jpg"
                           data-product-name="1 kg Nigerian Salmon."
-                          data-product-price="69.910"
+                          data-product-price="69.00 "
                           onClick={() => {
                             handleAddtoCart({
                               id: 0,
@@ -3311,7 +3311,7 @@ function Landing(props: { handleNextPage: any }) {
                       className="ProductCardHorizontal_priceWrapper__3OYMk"
                       data-id="large-robian-1kg"
                     >
-                      <h5 className="Typography_h5__MRrA0">97.72 QAR</h5>
+                      <h5 className="Typography_h5__MRrA0">97.00 QAR</h5>
                       <div className="a_pluss_6">
                         <a
                           type="button"
@@ -3463,7 +3463,7 @@ function Landing(props: { handleNextPage: any }) {
                       className="ProductCardHorizontal_priceWrapper__3OYMk"
                       data-id="large-robian-1kg"
                     >
-                      <h5 className="Typography_h5__MRrA0">100.72 QAR</h5>
+                      <h5 className="Typography_h5__MRrA0">100.00 QAR</h5>
                       <div className="a_pluss_6">
                         <a
                           type="button"
