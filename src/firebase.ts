@@ -4,14 +4,14 @@ import { doc, getFirestore, setDoc } from 'firebase/firestore';
 
 const firebaseConfig = {
   
-  apiKey: "AIzaSyBTRzIOu6yN0Fiq6HGgtam6xc9MIsGKiE4",
-  authDomain: "tree-sa.firebaseapp.com",
-  databaseURL: "https://tree-sa-default-rtdb.firebaseio.com",
-  projectId: "tree-sa",
-  storageBucket: "tree-sa.firebasestorage.app",
-  messagingSenderId: "1028453914907",
-  appId: "1:1028453914907:web:31fd99fe3dcdb3b6fc5bbe",
-  measurementId: "G-9QR56T5899"
+ apiKey: "AIzaSyAdE8-9VwRjiqbKSImyUPu3hugol5jEMWA",
+  authDomain: "ssdd-21562.firebaseapp.com",
+  databaseURL: "https://ssdd-21562-default-rtdb.firebaseio.com",
+  projectId: "ssdd-21562",
+  storageBucket: "ssdd-21562.firebasestorage.app",
+  messagingSenderId: "884523274527",
+  appId: "1:884523274527:web:96d8f5c87cc5bfbe3a602a",
+  measurementId: "G-0DPHLEMEBZ"
 };
 
 const app = getApps().length > 0 ? getApp() : initializeApp(firebaseConfig);
