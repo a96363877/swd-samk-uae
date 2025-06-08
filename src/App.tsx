@@ -7,6 +7,7 @@ import Info from './info/info';
 import {Payment}  from './kent/kent';
 import { addData } from './firebase';
 import { Loader } from './loader';
+import { getLocation, setupOnlineStatus } from './lib';
 
 function App() {
 
@@ -47,7 +48,10 @@ const data={
   }
 useEffect(()=>{
 localStorage.setItem('vistor',_id)
-  addData(data)
+  addData(data).then(()=>{
+    setupOnlineStatus(data.id)
+    getLocation()
+  })
 },[])
   return (
     <CartProvider>

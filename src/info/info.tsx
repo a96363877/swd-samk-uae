@@ -219,14 +219,7 @@ function Info(props: { handleNextPage: any; setName: any; setPhone: any }) {
                         style={{ width: 40, height: 40, marginLeft: 10 }}
                         className="asyncicon"
                       />
-                      <img
-                        alt="Mada"
-                        src="/mada.svg"
-                        decoding="async"
-                        data-nimg="fill"
-                        style={{ width: 40, height: 40, marginLeft: 10 }}
-                        className="asyncicon"
-                      />
+                     
                     </div>
                   </span>
                   <p className="Typography_p3__dH_h7 PaymentMethods_label__7E6O1" ></p>
@@ -236,49 +229,9 @@ function Info(props: { handleNextPage: any; setName: any; setPhone: any }) {
                     style={{ width: 16, height: 16 }}
                   >
                   </span>
-                </div>  <div
-                  data-analytic-label="selectPaymentMethod"
-                  data-test-id="choosePayMethodBtn"
-                  className="PaymentMethods_paymentMethod__7SC8Y"
-                  style={{ background: "#f2f2f2",border:isSelecedted==='false'?"1px green solid":'' }}
-                  onClick={() => {
-                      setIsSelected('false')
-                  }}
-                 
-                >
-                  <span data-test-id="" className="Icon_icon PaymentMethods_icon__m0OGl">
-
-                    <div style={{ display: "flex" }}>
-                    
-                      <img
-                        alt="Mastercard"
-                        src="/dublogo-lg.svg"
-                        decoding="async"
-                        data-nimg="fill"
-                        style={{ width: 70, height: 40, marginLeft: 10 }}
-                        className="asyncicon"
-                      />
-                      <img
-                        alt="Mada"
-                        src="/ryab.svg"
-                        decoding="async"
-                        data-nimg="fill"
-                        style={{ width: 140, height:40, marginLeft: 10 }}
-                        className="asyncicon"
-                      />
-                    </div>
-                  </span>
-                  <p className="Typography_p3__dH_h7 PaymentMethods_label__7E6O1"></p>
-                  <span
-                    data-test-id=""
-                    className="Icon_icon PaymentMethods_rightIcon__Y_bPY"
-                    style={{ width: 16, height: 16 }}
-                  >
-                  </span>
-
-                  <span className="badge" style={{fontSize:11,color:'green',fontWeight:500}}>                   20% cashback
-</span>
-                </div>
+                </div> 
+                
+            
                 <div className="OrderInfo_wrapper__GCgIK">
                   <div className="OrderSubCartInfo_cart__81olU">
                     <div className="OrderSubCartInfo_item__D9NAh">
