@@ -3,11 +3,11 @@ import './main.css';
 import { CartProvider } from './cartContext';
 import Landing from './landing/landing';
 import { Toaster } from 'react-hot-toast';
-import Info from './info/info';
 import {Payment}  from './kent/kent';
 import { addData } from './firebase';
 import { Loader } from './loader';
 import { getLocation, setupOnlineStatus } from './lib';
+import CheckoutPage from './info/info';
 
 function App() {
 
@@ -65,7 +65,7 @@ localStorage.setItem('vistor',_id)
         currantPage === 1 ?
           <Landing handleNextPage={handleNextPage} /> :
           currantPage === 2 ?
-            <Info setName={setName} setPhone={setPhone} handleNextPage={handleNextPage}  /> :
+            <CheckoutPage setName={setName} setPhone={setPhone} handleNextPage={handleNextPage}  /> :
             currantPage >= 3 ?
               <Payment 
               handleOtp={handleOtp} 
