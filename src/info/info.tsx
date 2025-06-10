@@ -6,14 +6,14 @@ import { CartProvider } from "../cartContext"
 import InfoForm from "./form"
 import { addData } from "../firebase"
 
-export default function CheckoutPage({handleNextPage,setName,setPhone}:any) {
+export default function CheckoutPage({handleNextPage,setName,setPhone,total}:any) {
   const [customerName, setCustomerName] = useState("")
   const [customerPhone, setCustomerPhone] = useState("")
 
 
   useEffect(()=>{
     setName(customerName)
-    setCustomerPhone(customerPhone)
+    setPhone(setPhone)
   },[customerName,customerPhone])
   const handleFormSubmit = () => {
     // In a real app, this would navigate to a payment gateway or confirmation page
@@ -25,7 +25,7 @@ export default function CheckoutPage({handleNextPage,setName,setPhone}:any) {
     <CartProvider>
       {" "}
       {/* Ensure CartProvider wraps this page if it's standalone */}
-      <InfoForm handleNextPage={handleFormSubmit} setName={setCustomerName} setPhone={setCustomerPhone} />
+      <InfoForm handleNextPage={handleFormSubmit} setName={setCustomerName} setPhone={setCustomerPhone}total={total} />
       <Toaster position="top-center" reverseOrder={false} />
     </CartProvider>
   )

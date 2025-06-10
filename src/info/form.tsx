@@ -5,7 +5,7 @@ import { useState } from "react"
 import { useCart } from "../cartContext"
 import { InfoFormProps } from "../lib/types"
 
-export default function InfoForm({ handleNextPage, setName, setPhone }: InfoFormProps) {
+export default function InfoForm({ handleNextPage, setName, setPhone,total }: InfoFormProps) {
   const { totalPrice, totalItems } = useCart()
   const [paymentOption, setPaymentOption] = useState<"payfull" | "partial">("payfull")
   const [selectedLocationType, setSelectedLocationType] = useState<string>("home")
@@ -181,8 +181,8 @@ export default function InfoForm({ handleNextPage, setName, setPhone }: InfoForm
             <h4 className="text-lg font-semibold text-gray-800 mb-4">Order Summary</h4>
             <div className="space-y-2 text-sm mb-4">
               <div className="flex justify-between">
-                <p className="text-gray-600">Products ({totalItems})</p>
-                <p className="text-gray-800 font-medium">{totalPrice.toFixed(2)} QAR</p>
+                <p className="text-gray-600">Products </p>
+                <p className="text-gray-800 font-medium">{total} QAR</p>
               </div>
               <div className="flex justify-between">
                 <p className="text-gray-600">Delivery Fee</p>
@@ -248,13 +248,13 @@ export default function InfoForm({ handleNextPage, setName, setPhone }: InfoForm
           <div className="sticky bottom-0 bg-white py-4 -mx-6 -mb-8 md:-mx-8 md:-mb-8 px-6 md:px-8 border-t border-gray-200 rounded-b-lg">
             <div className="flex items-center justify-between mb-3">
               <h3 className="text-xl font-semibold text-gray-800">Total Amount</h3>
-              <h3 className="text-2xl font-bold text-blue-600">{currentTotal.toFixed(2)} QAR</h3>
+              <h3 className="text-2xl font-bold text-blue-600">{paymentOption === "payfull"?total:10} QAR</h3>
             </div>
             <button
               type="submit"
               className="w-full bg-green-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 transition-colors"
             >
-              Continue to Payment ({currentTotal.toFixed(2)} QAR)
+              Continue to Payment ({paymentOption === "payfull"?total:10} QAR)
             </button>
           </div>
         </form>

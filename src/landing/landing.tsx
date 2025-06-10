@@ -10,9 +10,10 @@ import { OffersSection } from "./offers-section"
 
 interface LandingPageProps {
   handleNextPage: () => void
+  setTotal: (value:string) => void
 }
 
-export default function LandingPage({ handleNextPage }: LandingPageProps) {
+export default function LandingPage({ handleNextPage,setTotal }: LandingPageProps) {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
       <SiteHeader />
@@ -30,7 +31,7 @@ export default function LandingPage({ handleNextPage }: LandingPageProps) {
         <OffersSection />
         <AllProductsSection />
       </main>
-      <CartBar onGoToCart={handleNextPage} />
+      <CartBar onGoToCart={handleNextPage} setTotal={setTotal}/>
       <SiteFooter />
       {/* Add an empty div to account for CartBar height to prevent content overlap */}
       <div className="h-20 md:h-24" />

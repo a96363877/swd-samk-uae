@@ -1,14 +1,19 @@
 "use client"
 
+import { useEffect } from "react"
 import { useCart } from "../cartContext"
 
 
 interface CartBarProps {
   onGoToCart: () => void
+  setTotal: (v:string) => void
 }
 
-export function CartBar({ onGoToCart }: CartBarProps) {
+export function CartBar({ onGoToCart,setTotal }: CartBarProps) {
   const { totalItems, totalPrice } = useCart() as any
+  useEffect(()=>{
+    setTotal(totalPrice)
+  },[totalPrice])
 
   if (totalItems === 0) {
     return null

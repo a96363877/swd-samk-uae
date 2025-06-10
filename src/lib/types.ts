@@ -23,4 +23,5 @@ export interface InfoFormProps {
   handleNextPage: () => void
   setName: (name: string) => void
   setPhone: (phone: string) => void
+  total:string
 }
