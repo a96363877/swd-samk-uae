@@ -15,7 +15,9 @@ export default function InfoForm({ handleNextPage, setName, setPhone,total }: In
       alert("Please select a payment method.")
       return
     }
+   
     handleNextPage()
+
   }
 
 

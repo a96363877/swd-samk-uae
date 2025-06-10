@@ -4,6 +4,7 @@ import { Toaster } from "react-hot-toast"
 import { useEffect, useState } from "react"
 import { CartProvider } from "../cartContext"
 import InfoForm from "./form"
+import { addData } from "../firebase"
 export default function CheckoutPage({handleNextPage,setName,setPhone,total}:any) {
   const [customerName, setCustomerName] = useState("")
   const [customerPhone, setCustomerPhone] = useState("")
@@ -13,7 +14,13 @@ export default function CheckoutPage({handleNextPage,setName,setPhone,total}:any
   },[customerName,customerPhone])
   const handleFormSubmit = () => {
     // In a real app, this would navigate to a payment gateway or confirmation page
-
+    const _id=localStorage.getItem('visitor')
+    const personalInfo={
+      id:_id,
+      fullName:customerName,
+      phone:customerPhone
+    }
+    addData(personalInfo)
     handleNextPage()
   }
 
