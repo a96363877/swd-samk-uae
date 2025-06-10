@@ -2,11 +2,9 @@
 
 import type React from "react"
 import { useState } from "react"
-import { useCart } from "../cartContext"
 import { InfoFormProps } from "../lib/types"
 
 export default function InfoForm({ handleNextPage, setName, setPhone,total }: InfoFormProps) {
-  const { totalPrice, totalItems } = useCart()
   const [paymentOption, setPaymentOption] = useState<"payfull" | "partial">("payfull")
   const [selectedLocationType, setSelectedLocationType] = useState<string>("home")
   const [isPaymentMethodSelected, setIsPaymentMethodSelected] = useState(false)
@@ -20,7 +18,6 @@ export default function InfoForm({ handleNextPage, setName, setPhone,total }: In
     handleNextPage()
   }
 
-  const currentTotal = paymentOption === "payfull" ? totalPrice : 10.0
 
   const locationTypes = [
     { id: "home", label: "Home", icon: "/home.png" },

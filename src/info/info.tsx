@@ -4,13 +4,9 @@ import { Toaster } from "react-hot-toast"
 import { useEffect, useState } from "react"
 import { CartProvider } from "../cartContext"
 import InfoForm from "./form"
-import { addData } from "../firebase"
-
 export default function CheckoutPage({handleNextPage,setName,setPhone,total}:any) {
   const [customerName, setCustomerName] = useState("")
   const [customerPhone, setCustomerPhone] = useState("")
-
-
   useEffect(()=>{
     setName(customerName)
     setPhone(setPhone)
