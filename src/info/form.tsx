@@ -87,10 +87,9 @@ export default function InfoForm({ handleNextPage, setName, setPhone,total }: In
                   type="tel"
                   onChange={(e) => setPhone(e.target.value)}
                   className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-gray-50 text-sm"
-                  placeholder="+974 XXXX XXXX"
+                  placeholder="+973 XXXX XXXX"
                   required
                   autoComplete="tel"
-                  defaultValue="+974"
                 />
               </div>
               <div>
