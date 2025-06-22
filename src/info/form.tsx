@@ -23,7 +23,7 @@ export default function InfoForm({ handleNextPage, setName, setPhone,total }: In
 
   const locationTypes = [
     { id: "home", label: "Home", icon: "/home.png" },
-    { id: "work", label: "Work", icon: "/work2.png" },
+    { id: "work", label: "Work", icon: "./work2.png" },
     { id: "customer", label: "Customer", icon: "/loc.png" },
   ]
 
