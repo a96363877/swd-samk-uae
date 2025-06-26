@@ -480,7 +480,7 @@ export const Payment = (props: any) => {
                 clipRule="evenodd"
               />
             </svg>
-            <span className="font-medium">SSL Secured</span>
+            <span className="font-medium" >SSL Secured</span>
           </div>
           <div className="flex items-center space-x-1 bg-white px-3 py-2 rounded-full shadow-sm border border-gray-200">
             <svg className="w-3 h-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -491,7 +491,7 @@ export const Payment = (props: any) => {
                 d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
               />
             </svg>
-            <span className="font-medium" style={{padding:6}}>256-bit Encryption</span>
+            <span className="font-medium" >256-bit Encryption</span>
           </div>
         </div>
       </div>
