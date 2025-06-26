@@ -1,8 +1,6 @@
 import { Award, Clock, Fish, Truck } from "lucide-react"
 import { AllProductsSection } from "./all-products-section"
 import { CartBar } from "./cart-bar"
-import { CategoryCarousel } from "./category-carousel"
-import { FilterPresets } from "./filter-presets"
 import { SiteFooter } from "./footer"
 import { SiteHeader } from "./header"
 import { MerchantDetails } from "./merchant-details"
