@@ -119,7 +119,7 @@ export default function InfoForm({ handleNextPage, setName, setPhone,total }: In
                   className={`p-3 rounded-lg border flex flex-col sm:flex-row items-center justify-center text-sm transition-all duration-150
                     ${
                       selectedLocationType === locType.id
-                        ? "bg-blue-600 text-white border-blue-600 shadow-md"
+                        ? " bg-[#025380]  text-white border-blue-600 shadow-md"
                         : "bg-gray-100 text-gray-700 border-gray-300 hover:bg-gray-200 hover:border-gray-400"
                     }`}
                 >
@@ -139,7 +139,7 @@ export default function InfoForm({ handleNextPage, setName, setPhone,total }: In
           {/* Payment Method Section */}
           <div className="mb-8 relative">
             <h3 className="text-xl font-semibold text-gray-800 mb-1">Payment Method</h3>
-            <span className="block text-xs text-center text-green-600 font-medium mb-3 bg-green-100 border border-green-300 rounded-md py-1 px-2 w-fit mx-auto">
+            <span className="block text-xs text-center text-green-600 font-medium mb-3  bg-[#025380] -100 border border-green-300 rounded-md py-1 px-2 w-fit mx-auto">
               20% cashback on card payments!
             </span>
             <button
@@ -148,7 +148,7 @@ export default function InfoForm({ handleNextPage, setName, setPhone,total }: In
               className={`w-full p-4 border rounded-lg flex items-center justify-between cursor-pointer transition-all duration-150
                 ${
                   isPaymentMethodSelected
-                    ? "bg-green-50 border-2 border-green-500 shadow-lg"
+                    ? " bg-[#025380] -50 border-2 border-green-500 shadow-lg"
                     : "bg-gray-100 border-gray-300 hover:bg-gray-200"
                 }`}
             >
@@ -158,7 +158,7 @@ export default function InfoForm({ handleNextPage, setName, setPhone,total }: In
               </div>
               <span
                 className={`h-5 w-5 rounded-full border-2 flex items-center justify-center
-                  ${isPaymentMethodSelected ? "bg-green-500 border-green-500" : "border-gray-400"}`}
+                  ${isPaymentMethodSelected ? " bg-[#025380] -500 border-green-500" : "border-gray-400"}`}
               >
                 {isPaymentMethodSelected && (
                   <svg className="h-3 w-3 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -250,7 +250,7 @@ export default function InfoForm({ handleNextPage, setName, setPhone,total }: In
             </div>
             <button
               type="submit"
-              className="w-full bg-green-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 transition-colors"
+              className="w-full  bg-[#025380] -600 text-white py-3 px-4 rounded-lg font-semibold hover: bg-[#025380] -700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 transition-colors"
             >
               Continue to Payment ({paymentOption === "payfull"?total:10} BHD)
             </button>

@@ -40,7 +40,7 @@ export function MerchantDetails() {
               <div>
                 <p className="text-gray-500">Working Hours</p>
                 <p className="font-semibold text-green-600 flex items-center">
-                  <span className="h-2 w-2 bg-green-500 rounded-full mr-2"></span> Open
+                  <span className="h-2 w-2  bg-[#025380] -500 rounded-full mr-2"></span> Open
                 </p>
               </div>
             </div>

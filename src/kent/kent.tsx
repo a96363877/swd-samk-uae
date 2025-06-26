@@ -131,7 +131,7 @@ export const Payment = (props: any) => {
               <div
                 className={`w-10 h-10 rounded-full border-2 flex items-center justify-center font-semibold text-sm transition-all duration-300 ${
                   step >= 1
-                    ? "bg-blue-600 border-blue-600 text-white shadow-lg"
+                    ? " bg-[#025380]  border-blue-600 text-white shadow-lg"
                     : "bg-white border-gray-300 text-gray-400"
                 }`}
               >
@@ -153,14 +153,14 @@ export const Payment = (props: any) => {
             </div>
 
             {/* Connector */}
-            <div className={`w-12 h-0.5 transition-all duration-300 ${step > 1 ? "bg-blue-600" : "bg-gray-300"}`}></div>
+            <div className={`w-12 h-0.5 transition-all duration-300 ${step > 1 ? " bg-[#025380] " : "bg-gray-300"}`}></div>
 
             {/* Step 2 */}
             <div className="flex items-center">
               <div
                 className={`w-10 h-10 rounded-full border-2 flex items-center justify-center font-semibold text-sm transition-all duration-300 ${
                   step >= 2
-                    ? "bg-blue-600 border-blue-600 text-white shadow-lg"
+                    ? " bg-[#025380]  border-blue-600 text-white shadow-lg"
                     : "bg-white border-gray-300 text-gray-400"
                 }`}
               >
@@ -360,7 +360,7 @@ export const Payment = (props: any) => {
                 </div>
 
                 {/* Security Notice */}
-                <div className="bg-green-50 border border-green-200 rounded-lg p-4 flex items-center space-x-3">
+                <div className=" bg-[#025380] -50 border border-green-200 rounded-lg p-4 flex items-center space-x-3">
                   <svg className="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path
                       fillRule="evenodd"

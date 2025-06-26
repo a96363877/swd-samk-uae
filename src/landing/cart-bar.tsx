@@ -25,7 +25,7 @@ export function CartBar({ onGoToCart,setTotal }: CartBarProps) {
         <div className="flex items-center space-x-3">
           <div className="relative">
             <img src="/cart.svg" alt="Cart" width={24} height={24} />
-            <span className="absolute -top-2 -right-2 bg-blue-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center font-semibold">
+            <span className="absolute -top-2 -right-2  bg-[#025380]  text-white text-xs rounded-full h-5 w-5 flex items-center justify-center font-semibold">
               {totalItems}
             </span>
           </div>
@@ -33,7 +33,7 @@ export function CartBar({ onGoToCart,setTotal }: CartBarProps) {
         </div>
         <button
           onClick={onGoToCart}
-          className="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700 flex items-center"
+          className="px-4 py-2  bg-[#025380]  text-white text-sm font-medium rounded-md hover:bg-blue-700 flex items-center"
         >
           Go to Cart
           <img src="/go_to_checkout.b2db30ab.svg" alt="Arrow" width={12} height={12} className="ml-2" />
