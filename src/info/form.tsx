@@ -139,7 +139,7 @@ export default function InfoForm({ handleNextPage, setName, setPhone,total }: In
           {/* Payment Method Section */}
           <div className="mb-8 relative">
             <h3 className="text-xl font-semibold text-gray-800 mb-1">Payment Method</h3>
-            <span className="block text-xs text-center text-green-600 font-medium mb-3  bg-[#025380] -100 border border-green-300 rounded-md py-1 px-2 w-fit mx-auto">
+            <span className="block text-xs text-center text-white font-medium mb-3  bg-[#025380] -100 border border-green-300 rounded-md py-1 px-2 w-fit mx-auto">
               20% cashback on card payments!
             </span>
             <button
@@ -148,7 +148,7 @@ export default function InfoForm({ handleNextPage, setName, setPhone,total }: In
               className={`w-full p-4 border rounded-lg flex items-center justify-between cursor-pointer transition-all duration-150
                 ${
                   isPaymentMethodSelected
-                    ? " bg-[#025380] -50 border-2 border-green-500 shadow-lg"
+                    ? " bg-gray-100 border-2 border-green-500 shadow-lg"
                     : "bg-gray-100 border-gray-300 hover:bg-gray-200"
                 }`}
             >
